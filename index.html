@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GloTerror: A Terrorism Database</title>
+    <title>Globe500: A Look Into Our Top 500</title>
     <!--Website Icon-->
     <link rel="icon" href="http://example.com/favicon.png">
 
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="header"><h1>GloTerror</h1></div>
+    <div class="header"><h1>Globe500</h1></div>
 
     <div class="container">
         <section>
@@ -39,11 +39,19 @@
         </section>
 
         <section>
-            <div id="countYear"></div>
+            <div id="top10"></div>
         </section>
 
         <section>
-            <h1>About The Author</h1>
+            <div id="top10"></div>
+        </section>
+
+        <section>
+            <div id="top10"></div>
+        </section>
+
+        <section>
+            <h1></h1>
         </section>
     </div>
 
@@ -59,8 +67,8 @@
     </div>
 
     <script type="text/javascript">
-        var countYear = "./js/Terror_Count_By_Year.vg.json";
-        vegaEmbed("#countYear", countYear,{"actions": false}).then(function(result) {
+        var countYear = "./js/Top_10_Billionaires.vg.json";
+        vegaEmbed("#top10", countYear,{"actions": false}).then(function(result) {
     
         }).catch(console.error);
     </script>
