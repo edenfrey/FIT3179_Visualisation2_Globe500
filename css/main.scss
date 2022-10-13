@@ -70,9 +70,9 @@ body {
         position:absolute;
         top: 40px;
         bottom: 40px;
+
         section {
             display: flex;
-            flex-direction: column;
             justify-content:center;
             align-items: center;
             width: 100%;
@@ -81,15 +81,14 @@ body {
             background-color: rgb(17, 29, 56);
 
             h1 {
-                font-size: 64 !important;
-                font-weight: bolder !important;
-                text-decoration: underline #fefefe 5px;
+                font-size: 64;
+                font-weight: bolder;
+                text-decoration: underline #fefefe;
             }
 
             h2 {
-                font-size: 32 !important;
-                font-weight: bold !important;
-                text-align: center;
+                font-size: 32;
+                font-weight: bold;
             }
 
             &:nth-of-type(1){

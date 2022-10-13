@@ -66,7 +66,6 @@ body .container {
 }
 body .container section {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -75,14 +74,13 @@ body .container section {
   background-color: rgb(17, 29, 56);
 }
 body .container section h1 {
-  font-size: 64 !important;
-  font-weight: bolder !important;
-  text-decoration: underline #fefefe 5px;
+  font-size: 64;
+  font-weight: bolder;
+  text-decoration: underline #fefefe;
 }
 body .container section h2 {
-  font-size: 32 !important;
-  font-weight: bold !important;
-  text-align: center;
+  font-size: 32;
+  font-weight: bold;
 }
 body .container section:nth-of-type(1) {
   background-color: #210d57;
