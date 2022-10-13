@@ -78,7 +78,7 @@ body {
             height: 100%;
             scroll-snap-align: start;
             background-color: rgb(17, 29, 56);
-            padding: 20px;
+            padding: 50px;
 
             &:nth-of-type(1){
                 background-color:#210d57;
@@ -87,25 +87,23 @@ body {
             &:nth-last-of-type(1){
                 background-color: #1c1c1e;
             }
-
-            h1 {
-                font-size: 24px;
-            }
         }
         
         #startSection {
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+            
             h1 {
-                font-size: 64;
-                font-weight: bolder;
-                text-decoration: underline wavy #fefefe 5px;
+                font-size: 64 !important;
+                font-weight: bolder ip !important;
+                text-decoration: underline #fefefe 5px;
             }
 
             h2 {
-                font-size: 32;
-                font-weight: bold;
+                font-size: 32 !important;
+                font-weight: bold !important;
+                text-align: center;
             }
         }
         
