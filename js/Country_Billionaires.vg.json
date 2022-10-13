@@ -1,0 +1,105 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1050,
+  "height": 650,
+  "config": {"view": {"stroke": "transparent", "opacity": 0}},
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 200,
+      "bind": {
+        "input": "range",
+        "min": 200,
+        "max": 600,
+        "step": 100,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [0, 0],
+      "bind": {
+        "input": "select",
+        "options": [
+          [0, 0],
+          [20, 50],
+          [100, 34],
+          [-95, 37], 
+          [-56, -9], 
+          [34, -8],
+          [140, -22]
+        ],
+        "labels": ["Center", "Europe", "Asia", "North America", "South America", "Africa", "Oceania"],
+        "name": "Area/Region: "
+      }
+    }
+  ],
+  "projection": 
+  {
+    "type": "equirectangular", 
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
+  "data": 
+  {
+        "url": "../js/world_map/ne_110m.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+  },
+  "layer": [
+    {
+      "data": 
+      {
+        "url": "../js/world_map/oceans.topojson",
+        "format": {"type": "topojson", "feature": "oceans"}
+      },
+      "mark": {"type": "geoshape", "fill": "blue"}
+    },
+    {
+      "data": 
+      {
+        "url": "../js/world_map/ne_110m.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      }, 
+      "mark": {"type": "geoshape", "fill": null, "stroke": "gray"}},
+    {
+      "transform": [
+        {
+          "calculate": "'Billionaires not found in ' + datum.properties.NAME",
+          "as": "note"
+        }
+      ],
+      "mark": {"type": "geoshape", "fill": "gray", "stroke": "white"},
+      "encoding": {"tooltip": {"field": "note"}}
+    },
+    {    "transform": [
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "data": {
+            "url": "../data/Billionaire_Count_by_Country.csv"
+          },
+          "key": "Country",
+          "fields": ["Count"]
+        }
+      },
+      {"calculate": "datum.Count" , "as": "Number of Billionaires"}
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "Number of Billionaires",
+        "type": "quantitative",
+        "scale": {
+            "type": "log", 
+            "scheme": "greens"
+            
+            }
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
+        {"field": "Count", "type": "quantitative", "title": "Billionaire Count"}
+      ]
+    }}
+    
+  ]
+}

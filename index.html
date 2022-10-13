@@ -53,6 +53,11 @@
             <div id="top10"></div>
         </section>
 
+        <section id="countryBillionairesSection">
+            <h1>Title</h1>
+            <div id="countryBillionaires"></div>
+        </section>
+
         <section id = "authorSection">
             <h1>Author</h1>
         </section>
@@ -70,8 +75,9 @@
     </div>
 
     <script type="text/javascript">
-        var countYear = "./js/Top_10_Billionaires.vg.json";
-        vegaEmbed("#top10", countYear,{"actions": false}).then(function(result) {
+        var countryBillionaires = "./js/Country_Billionaires.vg.json";
+        
+        vegaEmbed("#countryBillionaires", countryBillionaires,{"actions": false}).then(function(result) {
     
         }).catch(console.error);
     </script>
