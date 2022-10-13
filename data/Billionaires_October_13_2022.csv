@@ -1,3 +1,501 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d845697cc904f22fb0afa94070b35d9942173172313164065d8a3005c53f9968
-size 21188
+Name,Net Worth,Country,Industry
+Elon Musk,206,United States,Technology
+Jeff Bezos,136,United States,Technology
+Bernard Arnault,132,France,Consumer
+Gautam Adani,122,India,Industrial
+Bill Gates,104,United States,Technology
+Warren Buffett,92.7,United States,Diversified
+Larry Page,90.3,United States,Technology
+Sergey Brin,86.4,United States,Technology
+Mukesh Ambani,81.6,India,Energy
+Steve Ballmer,81.0,United States,Technology
+Larry Ellison,80.5,United States,Technology
+Carlos Slim,67.8,Mexico,Diversified
+Zhong Shanshan,64.4,China,Diversified
+Francoise Bettencourt Meyers,63.8,France,Consumer
+Charles Koch,62.6,United States,Industrial
+Julia Flesher Koch & family,62.6,United States,Industrial
+Jim Walton,60.3,United States,Retail
+Rob Walton,59.7,United States,Retail
+Alice Walton,58.2,United States,Retail
+Zhang Yiming,54.9,China,Technology
+Jacqueline Badger Mars,52.8,United States,Food & Beverage
+John Mars,52.8,United States,Food & Beverage
+Mark Zuckerberg,48.0,United States,Technology
+Amancio Ortega,43.2,Spain,Retail
+Michael Dell,42.8,United States,Technology
+Alain Wertheimer,38.8,France,Consumer
+Gerard Wertheimer,38.8,France,Consumer
+Giovanni Ferrero & family,36.1,Italy,Food & Beverage
+Zeng Yuqun,35.0,Hong Kong,Industrial
+Phil Knight & family,34.8,United States,Consumer
+Changpeng Zhao,31.9,Canada,Finance
+Len Blavatnik,31.2,United States,Diversified
+Francois Pinault,30.7,France,Consumer
+Jack Ma,30.1,China,Technology
+Ken Griffin,29.2,United States,Finance
+Ma Huateng,28.9,China,Technology
+Stephen Schwarzman,28.8,United States,Finance
+Vladimir Potanin,27.9,Russian Federation,Commodities
+Klaus-Michael Kuehne,27.9,Germany,Industrial
+Tadashi Yanai,27.7,Japan,Retail
+MacKenzie Scott,27.4,United States,Technology
+Li Ka-shing,26.7,Hong Kong,Real Estate
+Miriam Adelson,26.2,United States,Entertainment
+Azim Premji,24.6,India,Technology
+Leonid Mikhelson,24.3,Russian Federation,Energy
+James Simons,24.3,United States,Finance
+Leonard Lauder,23.7,United States,Consumer
+William Ding,23.7,China,Technology
+Carl Icahn,23.4,United States,Diversified
+Shiv Nadar,22.7,India,Technology
+Henry Cheng,21.9,Hong Kong,Retail
+Abigail Johnson,21.6,United States,Finance
+Thomas Peterffy,21.4,United States,Finance
+German Larrea,21.4,Mexico,Commodities
+Harold Hamm,21.3,United States,Energy
+Radhakishan Damani,21.1,India,Retail
+Qin Yinglin,20.9,China,Food & Beverage
+Lukas Walton,20.9,United States,Retail
+Elaine Marshall,20.7,United States,Industrial
+He Xiangjian,20.3,China,Consumer
+Eric Schmidt,19.9,United States,Technology
+Colin Huang,19.7,China,Technology
+Wang Chuan-Fu,19.6,China,Consumer
+Takemitsu Takizaki,19.5,Japan,Technology
+Budi Hartono,19.0,Indonesia,Diversified
+Jorge Paulo Lemann,18.8,Brazil,Food & Beverage
+Aliko Dangote,18.6,Nigeria,Industrial
+Susanne Klatten,18.4,Germany,Industrial
+Alexey Mordashov,18.4,Russian Federation,Industrial
+Thomas Frist,18.2,United States,Health Care
+Vladimir Lisin,18.2,Russian Federation,Industrial
+Michael Hartono,17.9,Indonesia,Diversified
+Iris Fontbona & family,17.6,Chile,Commodities
+Lee Shau Kee,17.5,Hong Kong,Real Estate
+Gianluigi Aponte,17.5,Switzerland,Services
+Vagit Alekperov,17.5,Russian Federation,Energy
+Alisher Usmanov,17.5,Russian Federation,Diversified
+Ernesto Bertarelli & family,17.4,Switzerland,Diversified
+Peter Woo,17.4,Hong Kong,Real Estate
+John Menard,17.3,United States,Retail
+Dieter Schwarz,17.1,Germany,Retail
+Dan Gilbert,16.8,United States,Real Estate
+Andrew Forrest,16.8,Australia,Commodities
+Gina Rinehart,16.7,Australia,Commodities
+Alwaleed Bin Talal,16.7,Saudi Arabia,Diversified
+Huang Shilin,16.3,China,Industrial
+Vicky Safra,16.2,Greece,Finance
+Eyal Ofer,16.2,Israel,Services
+Ray Dalio,16.2,United States,Finance
+Donald Bren,16.1,United States,Real Estate
+Andrey Melnichenko,16.1,Russian Federation,Industrial
+Stefan Quandt,15.5,Germany,Industrial
+David Tepper,15.3,United States,Finance
+Li Xiting,15.2,Singapore,Health Care
+Pang Kang,15.1,China,Food & Beverage
+Dietrich Mateschitz,15.1,Austria,Food & Beverage
+Sam Bankman-Fried,15.1,United States,Finance
+Dilip Shanghvi,14.9,India,Health Care
+Lakshmi Mittal,14.8,India,Commodities
+Robert Kuok,14.6,Malaysia,Diversified
+Rodolphe Saade & family,14.6,France,Services
+Cyrus Poonawalla,14.3,India,Health Care
+Guillaume Pousaz,14.0,Switzerland,Technology
+Lui Che-Woo,14.0,Hong Kong,Entertainment
+Uday Kotak,13.6,India,Finance
+Philip Anschutz,13.3,United States,Diversified
+Suleiman Kerimov,13.2,Russian Federation,Commodities
+Marijke Mars,13.2,United States,Food & Beverage
+Victoria Mars,13.2,United States,Food & Beverage
+Pamela Mars-Wright,13.2,United States,Food & Beverage
+Valerie Mars,13.2,United States,Food & Beverage
+Robert Pera,13.1,United States,Technology
+Li Shu Fu,13.1,China,Industrial
+Laurene Powell Jobs,13.0,United States,Media & Telecom
+Xu Hang,12.9,Hong Kong,Health Care
+Mikhail Prokhorov,12.9,Russian Federation,Diversified
+Steve Cohen,12.8,United States,Finance
+Thomas Struengmann,12.8,Germany,Health Care
+Andreas Struengmann,12.8,Germany,Health Care
+Lv Xiang-yang,12.8,China,Consumer
+Jan Koum,12.7,United States,Technology
+Jeffery Hildebrand,12.7,United States,Energy
+Stan Kroenke,12.5,United States,Real Estate
+Savitri Jindal,12.5,India,Commodities
+Charlene de Carvalho-Heineken,12.4,Netherlands,Food & Beverage
+Scott Farquhar,12.3,Australia,Technology
+Sherry Brydson,12.2,Canada,Media & Telecom
+Jerry Jones,12.2,United States,Entertainment
+Wang Wei,12.2,China,Services
+Mike Cannon-Brookes,12.2,Australia,Technology
+Charoen Sirivadhanabhakdi,12.1,Thailand,Food & Beverage
+Karl Albrecht Jr,12.1,Germany,Retail
+Beate Heister,12.1,Germany,Retail
+Charles Schwab,12.1,United States,Finance
+Sunil Mittal,11.9,India,Media & Telecom
+Gennady Timchenko,11.9,Russian Federation,Diversified
+Robert Smith,11.9,United States,Finance
+Dustin Moskovitz,11.8,United States,Technology
+Harry Triguboff,11.8,Australia,Real Estate
+Idan Ofer,11.7,Israel,Energy
+Reinhold Wuerth,11.7,Germany,Industrial
+Donald Newhouse,11.6,United States,Media & Telecom
+Chen Bang,11.6,China,Health Care
+Stefan Persson,11.5,Sweden,Retail
+James Dyson,11.5,United Kingdom,Consumer
+Zhang Zhidong,11.4,China,Technology
+Masayoshi Son,11.3,Japan,Technology
+Renata Kellnerova,11.3,Czech Republic,Diversified
+Michael Platt,11.3,United Kingdom,Finance
+Richard Liu,11.2,China,Technology
+Sarath Ratanavadi,11.2,Thailand,Energy
+Jensen Huang,11.1,United States,Technology
+John Albert Sobrato,11.1,United States,Real Estate
+Zhang Bo,11.0,China,Industrial
+Wang Xing,11.0,China,Technology
+Wei Jianjun,10.9,China,Consumer
+Wang Wenyin,10.8,China,Commodities
+Mikhail Fridman,10.7,Russian Federation,Diversified
+Hugh Grosvenor,10.6,United Kingdom,Real Estate
+Kumar Birla,10.6,India,Industrial
+Luo Liguo,10.5,China,Industrial
+Izzy Englander,10.4,United States,Finance
+Ricardo Salinas,10.3,Mexico,Diversified
+Hasso Plattner,10.2,Germany,Technology
+Melinda French Gates,10.2,United States,Diversified
+Raymond Kwok,10.2,Hong Kong,Real Estate
+Jiang Rensheng,10.2,China,Health Care
+Stan Druckenmiller,10.1,United States,Finance
+Charles Butt & family,9.98,United States,Retail
+Pei Zhenhua,9.97,China,Industrial
+Jin Baofang,9.94,China,Energy
+Dang Yanbao,9.87,China,Energy
+Thomas Kwok,9.80,Hong Kong,Real Estate
+Graeme Hart,9.80,New Zealand,Finance
+Dave Duffield,9.77,United States,Technology
+Steven Rales,9.76,United States,Industrial
+Alejandro Santo Domingo & family,9.68,Colombia,Food & Beverage
+Roman Abramovich,9.65,Russian Federation,Diversified
+Dmitry Rybolovlev,9.60,Russian Federation,Diversified
+Tim Sweeney,9.58,United States,Technology
+Andy Beal,9.54,United States,Finance
+Paolo Rocca & family,9.46,Italy,Commodities
+Carl Cook,9.44,United States,Health Care
+Christy Walton,9.43,United States,Retail
+Michael Rubin,9.39,United States,Retail
+Liu Hanyuan,9.35,China,Industrial
+Liu Yongxing,9.20,China,Industrial
+Micky Arison,9.14,United States,Entertainment
+David Geffen,9.14,United States,Entertainment
+Goh Cheng Liang,9.00,Singapore,Industrial
+Leon Black,8.96,United States,Finance
+Gong Hongjia,8.96,China,Technology
+Fan Hongwei,8.95,China,Energy
+Li Zhenguo,8.91,China,Energy
+Michael Kadoorie,8.90,Hong Kong,Energy
+Gustaf Douglas & family,8.87,Sweden,Diversified
+Jay Chaudhry,8.87,United States,Technology
+Victor Rashnikov,8.84,Russian Federation,Industrial
+George Roberts,8.77,United States,Finance
+Marcel Telles,8.73,Brazil,Food & Beverage
+Patrick Soon-Shiong,8.72,United States,Health Care
+Brian Chesky,8.72,United States,Services
+Wee Cho Yaw,8.71,Singapore,Finance
+Jim Ratcliffe,8.68,United Kingdom,Industrial
+Antonia Axson Johnson,8.65,Sweden,Industrial
+Les Wexner,8.65,United States,Retail
+Andrey Guryev,8.51,Russian Federation,Industrial
+George Soros,8.50,United States,Finance
+Liu Jincheng,8.50,China,Industrial
+Lei Jun,8.48,China,Technology
+Henry Kravis,8.47,United States,Finance
+Johann Rupert & family,8.46,South Africa,Diversified
+Pierre Omidyar,8.46,United States,Technology
+Stephen Ross,8.39,United States,Real Estate
+Theo Albrecht Jr,8.37,Germany,Retail
+Patrick Collison,8.29,Ireland,Technology
+John Collison,8.29,Ireland,Technology
+Dan Cathy,8.27,United States,Food & Beverage
+Bubba Cathy,8.27,United States,Food & Beverage
+K P Singh,8.14,India,Real Estate
+Chris Hohn,8.14,United Kingdom,Finance
+Melker Schorling,8.11,Sweden,Diversified
+Richard Kinder,8.08,United States,Energy
+Anthony Pratt,8.07,Australia,Industrial
+Tom Gores,8.04,United States,Finance
+Liu Yonghao,8.02,China,Diversified
+David Shaw,8.00,United States,Finance
+Elizabeth Johnson,7.98,United States,Finance
+Ned Johnson IV,7.98,United States,Finance
+Nicky Oppenheimer,7.98,South Africa,Diversified
+Robin Li,7.97,China,Technology
+Jim Goodnight,7.95,United States,Technology
+John Fredriksen,7.94,Cyprus,Industrial
+Andy Bechtolsheim,7.93,Germany,Technology
+Gwendolyn Sontheim Meyer,7.92,United States,Commodities
+Pauline Keinath,7.92,United States,Commodities
+Wu Yajun,7.91,China,Real Estate
+Terry Pegula,7.90,United States,Energy
+Stefano Pessina,7.90,Monaco,Retail
+Cao Renxian,7.89,China,Technology
+Hansjoerg Wyss,7.86,Switzerland,Health Care
+Nathan Blecharczyk,7.85,United States,Services
+George Kaiser,7.73,United States,Energy
+Tammy Gustavson,7.73,United States,Services
+Qi Shi,7.68,China,Finance
+Sun Piaoyang,7.59,China,Health Care
+Joe Gebbia,7.58,United States,Services
+David Thomson,7.58,Canada,Media & Telecom
+Taylor Thomson,7.58,Canada,Media & Telecom
+Peter Thomson,7.58,Canada,Media & Telecom
+Tilman Fertitta,7.52,United States,Entertainment
+German Khan,7.51,Russian Federation,Diversified
+Carlos Sicupira,7.49,Brazil,Food & Beverage
+Wu Jianshu,7.46,Hong Kong,Industrial
+Xavier Niel,7.44,France,Technology
+Rupert Murdoch,7.40,United States,Media & Telecom
+Chase Coleman,7.37,United States,Finance
+John Malone,7.36,United States,Media & Telecom
+Ivan Glasenberg,7.36,Australia,Commodities
+Patrick Ryan,7.35,United States,Services
+Emmanuel Besnier,7.32,France,Food & Beverage
+Tom Morris,7.27,United Kingdom,Retail
+Jude Reyes,7.26,United States,Consumer
+Chris Reyes,7.26,United States,Consumer
+Natie Kirsh,7.25,South Africa,Food & Beverage
+Peter Thiel,7.23,United States,Finance
+Robert Kraft,7.19,United States,Entertainment
+Gao Jifan,7.19,China,Energy
+Eduardo Saverin,7.18,Brazil,Technology
+Ma Jianrong,7.17,China,Consumer
+Dannine Avara,7.16,United States,Energy
+Scott Duncan,7.16,United States,Energy
+Randa Williams,7.16,United States,Energy
+Milane Frantz,7.16,United States,Energy
+Nusli Wadia,7.14,India,Diversified
+Gabe Newell,7.09,United States,Technology
+Shahid Khan,7.08,United States,Consumer
+Mitchell Rales,7.05,United States,Industrial
+Leo Koguan,6.97,United States,Technology
+Blair Parry-Okeden,6.97,United States,Media & Telecom
+Jim Kennedy,6.97,United States,Media & Telecom
+Viktor Vekselberg,6.97,Russian Federation,Industrial
+Lin Jianhua,6.96,China,Technology
+Edward Roski,6.94,United States,Real Estate
+Jorge Moll & family,6.91,Brazil,Health Care
+Kenneth Dart,6.89,Cayman Islands,Finance
+James Pattison,6.88,Canada,Media & Telecom
+Ashwin Dani & family,6.88,India,Industrial
+Andre Hoffmann,6.83,Switzerland,Health Care
+Steven Spielberg,6.80,United States,Entertainment
+Stef Wertheimer,6.78,Israel,Diversified
+Richard LeFrak,6.71,United States,Real Estate
+Leonid Fedun,6.71,Russian Federation,Energy
+Josh Harris,6.69,United States,Finance
+Nik Storonsky,6.69,United Kingdom,Finance
+Xu Shihui,6.66,China,Food & Beverage
+Bob Rich,6.66,United States,Food & Beverage
+Ralph Lauren,6.66,United States,Consumer
+Nancy Laurie,6.65,United States,Retail
+Ding Shizhong,6.64,China,Consumer
+Zhang Congyuan,6.64,Taiwan,Industrial
+Zhong Huijuan,6.62,China,Health Care
+David Sun,6.61,United States,Technology
+John Tu,6.61,United States,Technology
+Andre Esteves,6.60,Brazil,Finance
+Yao Liangsong,6.58,China,Retail
+Gordon Moore,6.58,United States,Technology
+Laurent Dassault,6.58,France,Diversified
+Yang Huiyan,6.56,China,Real Estate
+Marie-Helene Habert-Dassault,6.56,France,Diversified
+Thierry Dassault,6.56,France,Diversified
+Vincent Bollore,6.55,France,Diversified
+Ronda Stryker,6.47,United States,Health Care
+Joseph Lau,6.47,Hong Kong,Real Estate
+Juan Beckmann Vidal & family,6.46,Mexico,Food & Beverage
+Samuel Yin,6.44,Taiwan,Diversified
+Wang Liping,6.42,China,Industrial
+Leonard Stern,6.41,United States,Real Estate
+Wu Shaoxun,6.41,China,Food & Beverage
+Vera Michalski-Hoffmann,6.41,Switzerland,Health Care
+Maja Hoffmann,6.41,Switzerland,Health Care
+Lin Li,6.41,China,Diversified
+Anthony von Mandl,6.39,Canada,Consumer
+Shari Arison,6.38,Israel,Diversified
+Ding Shijia,6.38,China,Consumer
+Vikram Lal,6.38,India,Industrial
+Alexander Abramov,6.36,Russian Federation,Industrial
+Nassef Sawiris,6.36,Egypt,Industrial
+Teh Hong Piow,6.36,Malaysia,Finance
+George Lucas,6.35,United States,Entertainment
+Lynn Schusterman,6.29,United States,Energy
+Mahendra Choksi & family,6.27,India,Industrial
+Woody Johnson,6.23,United States,Diversified
+Michael Smith,6.23,United States,Energy
+Simon Reuben,6.23,United Kingdom,Diversified
+David Reuben,6.23,United Kingdom,Diversified
+Magdalena Martullo,6.20,Switzerland,Industrial
+J K Irving,6.19,Canada,Commodities
+Wang Jianlin,6.19,China,Real Estate
+Luis Sarmiento,6.16,Colombia,Finance
+Yu Yong,6.15,China,Finance
+Frank Lowy,6.15,Australia,Real Estate
+Marc Benioff,6.14,United States,Technology
+Andreas Halvorsen,6.13,Norway,Finance
+Geoffrey Kwok,6.12,Hong Kong,Real Estate
+Manuel Villar,6.09,Philippines,Diversified
+Takahisa Takahara,6.07,Japan,Consumer
+Yeung Kin-Man,6.05,Hong Kong,Technology
+Li Ping,6.02,China,Industrial
+Hui Ka Yan,6.00,China,Real Estate
+Rahel Blocher,6.00,Switzerland,Industrial
+Linda Campbell,5.96,Canada,Media & Telecom
+Gaye Farncombe,5.96,Canada,Media & Telecom
+Arthur Irving,5.94,Canada,Energy
+Benu Bangur,5.94,India,Commodities
+Vyacheslav Kantor,5.94,Russian Federation,Industrial
+Karel Komarek,5.93,Czech Republic,Diversified
+Henry Laufer,5.90,United States,Finance
+John Grayken,5.90,Ireland,Finance
+Joe Ricketts,5.87,United States,Finance
+Ronald McAulay,5.87,Hong Kong,Energy
+Tito Beveridge,5.86,United States,Consumer
+Todd Boehly,5.85,United States,Diversified
+Ted Lerner,5.84,United States,Real Estate
+Henry Samueli,5.84,United States,Technology
+Jiang Weiping,5.82,China,Industrial
+Jay Y. Lee,5.79,"Korea, Republic of",Diversified
+Frederik Paulsen,5.77,Sweden,Health Care
+Prince Hans-Adam II,5.76,Liechtenstein,Finance
+Tsai Eng-Meng,5.76,Taiwan,Food & Beverage
+Francis Choi,5.74,Hong Kong,Real Estate
+Silvio Berlusconi,5.73,Italy,Media & Telecom
+Ugur Sahin,5.69,Germany,Health Care
+Ann Kroenke,5.69,United States,Retail
+Zhao Yan,5.66,China,Health Care
+Gary Rollins,5.64,United States,Industrial
+Vladimir Kim,5.64,Kazakhstan,Commodities
+Rocco Commisso,5.62,United States,Media & Telecom
+Mark Cuban,5.61,United States,Technology
+Sandra Ortega Mera,5.59,Spain,Retail
+Jian Jun,5.58,China,Consumer
+Niels Louis-Hansen,5.58,Denmark,Health Care
+Sam Zell,5.57,United States,Real Estate
+Dietmar Hopp,5.56,Germany,Technology
+Joseph Tsai,5.54,Canada,Technology
+Pedro Moreira Salles,5.49,Brazil,Finance
+M A Yusuff Ali,5.48,United Arab Emirates,Food & Beverage
+Ruan Liping,5.46,China,Industrial
+Bidzina Ivanishvili,5.45,Georgia,Diversified
+Wang Yiming,5.43,China,Energy
+Ruan Xueping,5.43,China,Industrial
+Alain Bouchard,5.42,Canada,Retail
+Kjeld Kirk Kristiansen,5.41,Denmark,Consumer
+Laurence Graff,5.40,United Kingdom,Consumer
+Alexey Kuzmichev,5.36,Russian Federation,Diversified
+Wang Yusuo,5.35,China,Energy
+Jeff Skoll,5.35,United States,Technology
+Dennis Washington,5.33,United States,Industrial
+Tony Ressler,5.33,United States,Finance
+Chen Jianhua,5.32,China,Industrial
+Joe Lewis,5.31,United Kingdom,Diversified
+Ludwig Merckle,5.31,Germany,Industrial
+Clive Calder,5.30,United Kingdom,Entertainment
+Tatyana Bakalchuk,5.30,Russian Federation,Technology
+James Cargill II,5.30,United States,Commodities
+Marianne Liebmann,5.30,United States,Commodities
+Austen Cargill,5.30,United States,Commodities
+Charles Ergen,5.27,United States,Media & Telecom
+Mark Shoen,5.26,United States,Services
+Carl Bennet,5.23,Sweden,Finance
+Michael Herz & family,5.23,Germany,Consumer
+Wolfgang Herz & family,5.23,Germany,Consumer
+Autry Stephens,5.22,United States,Energy
+Mary Malone,5.22,United States,Food & Beverage
+Chip Wilson,5.21,Canada,Retail
+Trevor Rees-Jones,5.21,United States,Energy
+John Doerr,5.20,United States,Finance
+Joao Moreira Salles,5.19,Brazil,Finance
+Fernando Moreira Salles,5.19,Brazil,Finance
+Walther Moreira Salles Jr,5.19,Brazil,Finance
+Li Ge,5.18,United States,Health Care
+Charles Cadogan,5.17,United Kingdom,Real Estate
+Terry Gou,5.16,Taiwan,Industrial
+Barry Lam,5.15,Taiwan,Technology
+Pat Stryker,5.15,United States,Health Care
+Bernie Marcus,5.15,United States,Retail
+Andrey Skoch,5.12,Russian Federation,Diversified
+Li Shuirong,5.10,China,Energy
+Marc Rowan,5.09,United States,Finance
+Mohammed Al Amoudi,5.09,Saudi Arabia,Energy
+Axel Oberwelland,5.06,Germany,Food & Beverage
+Xue Min,5.05,China,Health Care
+Patrick Drahi,5.05,France,Media & Telecom
+Lu Weiding,5.04,China,Diversified
+Sofie Kirk Kristiansen,5.03,Denmark,Consumer
+Agnete Kirk Thinggaard,5.03,Denmark,Consumer
+Thomas Kirk Kristiansen,5.03,Denmark,Consumer
+Ben Chestnut,5.02,United States,Technology
+Dan Kurzius,5.02,United States,Technology
+Edwin Leong,5.01,Hong Kong,Real Estate
+Wang Laisheng,5.00,China,Industrial
+Cheng Xue,4.96,China,Food & Beverage
+Denise Coates,4.95,United Kingdom,Entertainment
+Petr Aven,4.95,Russian Federation,Diversified
+David Cheriton,4.94,Canada,Technology
+Jon Gray,4.91,United States,Finance
+Cai Kui,4.91,China,Real Estate
+Zhang Lei,4.90,China,Finance
+Margot Perot & family,4.90,United States,Diversified
+Sri Prakash Lohia,4.90,Indonesia,Industrial
+Gao Dekang,4.88,China,Consumer
+Lai Meisong,4.88,China,Services
+David Filo,4.88,United States,Technology
+Ray Hunt,4.87,United States,Energy
+Abdullah Al Ghurair,4.86,United Arab Emirates,Diversified
+Rinat Akhmetov,4.85,Ukraine,Industrial
+Liz Mohn,4.80,Germany,Media & Telecom
+Mark Scheinberg,4.80,Isle of Man,Entertainment
+Joe Mansueto,4.79,United States,Technology
+Reinhold Schmieding,4.79,United States,Health Care
+Heinrich Deichmann & family,4.76,Germany,Retail
+Martin Viessmann & family,4.76,Germany,Industrial
+Kelcy Warren,4.76,United States,Energy
+Prajogo Pangestu,4.75,Indonesia,Energy
+Philip Ng,4.75,Singapore,Real Estate
+Zhou Qunfei,4.74,China,Technology
+Jane Lauder,4.74,United States,Consumer
+Mat Ishbia,4.74,United States,Finance
+Li Gaiteng,4.73,China,Consumer
+David Bonderman,4.71,United States,Finance
+Li Chunan,4.70,China,Energy
+Johan Johannson & family,4.69,Norway,Retail
+David Steward,4.69,United States,Technology
+Eric Yuan,4.69,United States,Technology
+Richard Li,4.68,Hong Kong,Media & Telecom
+Pham Nhat Vuong,4.68,Viet Nam,Real Estate
+Charles Dolan & family,4.67,United States,Media & Telecom
+Alain Merieux,4.67,France,Health Care
+Charles Johnson,4.67,United States,Finance
+Robert Ng,4.66,Singapore,Real Estate
+Sergey Galitskiy,4.66,Russian Federation,Retail
+Gordon Getty,4.65,United States,Diversified
+Cen Junda,4.65,China,Health Care
+Brian Acton,4.63,United States,Technology
+Odd Reitan,4.62,Norway,Food & Beverage
+Margaretta Taylor,4.60,United States,Media & Telecom
+James Cox Chambers,4.60,United States,Media & Telecom
+Katharine Rayner,4.60,United States,Media & Telecom
+Bertil Hult,4.60,Sweden,Diversified
+Jack Dorsey,4.59,United States,Technology
+Thomas Pritzker,4.58,United States,Finance
+Traudl Engelhorn-Vechiatto & family,4.55,Switzerland,Diversified
+Richard Branson,4.55,United Kingdom,Diversified
+Scott Cook,4.54,United States,Technology
+Thomas Schmidheiny,4.53,Switzerland,Industrial
+Wang Laichun,4.53,China,Industrial
+Jean-Michel Besnier,4.52,France,Food & Beverage
+Sergey Gordeev,4.51,Russian Federation,Real Estate
+Yasumitsu Shigeta,4.51,Japan,Media & Telecom
+Bruce Kovner,4.49,United States,Finance
