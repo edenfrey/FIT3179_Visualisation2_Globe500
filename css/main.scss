@@ -82,6 +82,7 @@ body {
             height: 100%;
             scroll-snap-align: start;
             background-color: rgb(17, 29, 56);
+            padding: 20px;
 
             &:nth-of-type(1){
                 background-color:#210d57;
@@ -96,10 +97,23 @@ body {
             }
         }
         
-        #line_chart {
-            height: 1000px;
-            width: 800px;
+        #startSection {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            h1 {
+                font-size: 64;
+                font-weight: bolder;
+                text-decoration: underline wavy #fefefe 5px;
+            }
+
+            h2 {
+                font-size: 32;
+                font-weight: bold;
+            }
         }
+        
+        
     }
 }
 

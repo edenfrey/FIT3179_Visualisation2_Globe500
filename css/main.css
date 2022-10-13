@@ -76,6 +76,7 @@ body .container section {
   height: 100%;
   scroll-snap-align: start;
   background-color: rgb(17, 29, 56);
+  padding: 20px;
 }
 body .container section:nth-of-type(1) {
   background-color: #210d57;
@@ -86,9 +87,19 @@ body .container section:nth-last-of-type(1) {
 body .container section h1 {
   font-size: 24px;
 }
-body .container #line_chart {
-  height: 1000px;
-  width: 800px;
+body .container #startSection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .container #startSection h1 {
+  font-size: 64;
+  font-weight: bolder;
+  text-decoration: underline wavy #fefefe 5px;
+}
+body .container #startSection h2 {
+  font-size: 32;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
