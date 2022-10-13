@@ -20,6 +20,29 @@ body {
             font-weight: bold;
             font-size: 24px;
         }
+
+        .topnav{
+            overflow: hidden;
+            right: 0;
+            a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+
+                .active{
+                    background-color: #04AA6D;
+                    color: white;
+                }
+            }
+            a:hover {
+                color: blue;
+                background-color: #ddd;
+            }
+
+        }
     }
 
     .footer {
