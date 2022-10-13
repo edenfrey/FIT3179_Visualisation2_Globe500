@@ -72,6 +72,7 @@ body {
         bottom: 40px;
         section {
             display: flex;
+            flex-direction: column;
             justify-content:center;
             align-items: center;
             width: 100%;
@@ -79,23 +80,9 @@ body {
             scroll-snap-align: start;
             background-color: rgb(17, 29, 56);
 
-            &:nth-of-type(1){
-                background-color:#210d57;
-            }
-            
-            &:nth-last-of-type(1){
-                background-color: #1c1c1e;
-            }
-        }
-        
-        #startSection {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
             h1 {
                 font-size: 64 !important;
-                font-weight: bolder ip !important;
+                font-weight: bolder !important;
                 text-decoration: underline #fefefe 5px;
             }
 
@@ -104,9 +91,15 @@ body {
                 font-weight: bold !important;
                 text-align: center;
             }
-        }
-        
-        
+
+            &:nth-of-type(1){
+                background-color:#210d57;
+            }
+            
+            &:nth-last-of-type(1){
+                background-color: #1c1c1e;
+            }
+        }    
     }
 }
 

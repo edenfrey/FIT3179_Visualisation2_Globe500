@@ -66,6 +66,7 @@ body .container {
 }
 body .container section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -73,26 +74,21 @@ body .container section {
   scroll-snap-align: start;
   background-color: rgb(17, 29, 56);
 }
+body .container section h1 {
+  font-size: 64 !important;
+  font-weight: bolder !important;
+  text-decoration: underline #fefefe 5px;
+}
+body .container section h2 {
+  font-size: 32 !important;
+  font-weight: bold !important;
+  text-align: center;
+}
 body .container section:nth-of-type(1) {
   background-color: #210d57;
 }
 body .container section:nth-last-of-type(1) {
   background-color: #1c1c1e;
-}
-body .container #startSection {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-body .container #startSection h1 {
-  font-size: 64 !important;
-  font-weight: bolder ip !important;
-  text-decoration: underline #fefefe 5px;
-}
-body .container #startSection h2 {
-  font-size: 32 !important;
-  font-weight: bold !important;
-  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
