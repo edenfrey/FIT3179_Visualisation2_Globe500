@@ -15,9 +15,9 @@
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 
      <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
     <!-- Import pure.css -->
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
@@ -77,7 +77,9 @@
     <script type="text/javascript">
         var countryBillionaires = "./js/Country_Billionaires.vg.json";
         
-        vegaEmbed('#countryBillionaires', countryBillionaires, { "actions": false });
+        vegaEmbed('#countryBillionaires', countryBillionaires, { "actions": false }).then(function(result){
+
+        }).catch(console.error);
     </script>
 
 </body>
