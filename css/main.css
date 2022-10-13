@@ -62,7 +62,7 @@ body .container {
   overflow-y: scroll;
   position: absolute;
   top: 40px;
-  bottom: 40px;
+  bottom: 0px;
 }
 body .container section {
   display: flex;
