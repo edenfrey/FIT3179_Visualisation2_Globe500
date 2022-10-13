@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {"text": "Terror Count  Worldwide by Year"},
+    "data": {
+      "url": "../data/GlobalTerrorismDatabase.csv"
+    },
+    "width": 800,
+    "height": 200,
+    "mark" : "line",
+    "encoding": {
+        "x": { "field": "iyear", "type": "ordinal", "title":"Year"},
+        "y": {"aggregate": "count", "field": "iyear", "title": "Number of Terrorism Acts"}
+    } 
+  
+}

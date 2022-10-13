@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GloTerror: A Terrorism Database</title>
+    <!--Website Icon-->
+    <link rel="icon" href="http://example.com/favicon.png">
+
+    <!--Our own styling-->
+    <link rel = "stylesheet" href = "css/main.css" type="text/css">
+    
+    <!-- Font awesome for icons-->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+
+     <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header"><h1>GloTerror</h1></div>
+
+    <div class="container">
+        <section>
+            <h1>Hi 1</h1>
+        </section>
+
+        <section>
+            <div id="countYear"></div>
+        </section>
+
+        <section>
+            <h1>About The Author</h1>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="social-icons mt-4">
+                <a href="https://www.instagram.com/adrian.xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/adrian_xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/amiradrian" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/edenfrey" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var countYear = "./js/Terror_Count_By_Year.vg.json";
+        vegaEmbed("#countYear", countYear,{"actions": false}).then(function(result) {
+    
+        }).catch(console.error);
+    </script>
+
+</body>
+
+</html>
