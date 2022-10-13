@@ -70,6 +70,7 @@ body {
         position:absolute;
         top: 40px;
         bottom: 40px;
+        padding: 50px;
         section {
             display: flex;
             justify-content:center;
@@ -78,7 +79,6 @@ body {
             height: 100%;
             scroll-snap-align: start;
             background-color: rgb(17, 29, 56);
-            padding: 50px;
 
             &:nth-of-type(1){
                 background-color:#210d57;
