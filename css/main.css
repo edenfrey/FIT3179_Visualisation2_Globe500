@@ -16,6 +16,7 @@ body .header {
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 body .header h1 {
   font-weight: bold;
