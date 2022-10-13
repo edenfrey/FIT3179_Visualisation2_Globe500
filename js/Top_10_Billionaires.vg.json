@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1050,
+    "height": 650,
+    "data": {
+        "url": "../data/Billionaires_October_13_2022.csv"
+    },
+    "transform": [
+        {"window": [
+            {"op": "rank", "as" : "rank"}
+        ]
+    }, {
+        "filter": "datum.rank <= 10"
+    }
+    ],
+    "mark": "bar",
+    "encoding": {
+        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions"},
+        "y": {"field": "Name", "type": "nominal", "sort": "-x"}
+    }
+}
