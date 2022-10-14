@@ -1,6 +1,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   color: #fefefe;
+  scroll-behavior: smooth;
 }
 
 body {
