@@ -81,7 +81,7 @@ body .container section {
 }
 body .container section h1 {
   font-size: 64;
-  font-weight: bolder;
+  font-weight: bold;
   text-decoration: underline #23238d;
 }
 body .container section h2 {
@@ -91,6 +91,11 @@ body .container section h2 {
 body .container section:nth-of-type(1) {
   color: #f2f2f2;
   background-color: #210d57;
+}
+body .container section:nth-of-type(1) h1 {
+  font-size: 128;
+  font-weight: bold;
+  text-decoration: underline #23238d;
 }
 body .container section:nth-last-of-type(1) {
   color: #f2f2f2;
