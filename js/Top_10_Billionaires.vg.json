@@ -2,6 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 1050,
     "height": 650,
+    "background":"#f2f2f2",
     "data": {
         "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Billionaires_October_13_2022.csv"
     },
