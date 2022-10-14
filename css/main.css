@@ -1,5 +1,6 @@
+@charset "UTF-8";
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans serif, Arial, Helvetica;
   scroll-behavior: smooth;
 }
 
@@ -42,17 +43,20 @@ body .header .topnav a:hover {
 }
 body .footer {
   width: 100%;
-  height: 40px;
+  height: 20px;
   position: fixed;
+  display: flex;
   bottom: 0;
   background-color: #808080;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 body .footer .social-icons {
-  font-size: 36px;
+  font-size: 16px;
   cursor: pointer;
 }
-body .footer .fa-instagram:hover, body .footer .fa-twitter:hover, body .footer .fa-linkedin:hover, body .footer .fa-twitch:hover {
+body .footer .fa-instagram:hover, body .footer .fa-twitter:hover, body .footer .fa-linkedin:hover, body .footer .fa-twitch:hover, body .footer .fa-github:hover {
   color: #1c1c1e;
 }
 body .footer .fab {
@@ -64,42 +68,178 @@ body .container {
   overflow-y: scroll;
   position: absolute;
   top: 40px;
-  bottom: 0px;
+  bottom: 20px;
   scroll-behavior: smooth;
 }
 body .container section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
-  color: #1c1c1e;
-  background-color: #f2f2f2;
   scroll-behavior: smooth;
 }
-body .container section h1 {
-  font-size: 64;
-  font-weight: bold;
-  text-decoration: underline #23238d;
-}
-body .container section h2 {
-  font-size: 32;
-  font-weight: bold;
-}
-body .container section:nth-of-type(1) {
+body .container #startSection, body .container #authorSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: #f2f2f2;
   background-color: #210d57;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
 }
-body .container section:nth-of-type(1) h1 {
-  font-size: 128;
-  font-weight: bold;
+body .container #startSection h1, body .container #authorSection h1 {
+  font-size: 68px !important;
+  font-weight: bolder !important;
   text-decoration: underline #23238d;
+  margin: 15px;
 }
-body .container section:nth-last-of-type(1) {
-  color: #f2f2f2;
-  background-color: #210d57;
+body .container #startSection h2, body .container #authorSection h2 {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  margin: 15px;
+}
+body .container #startSection p, body .container #authorSection p {
+  font-size: 16px !important;
+  margin: 10px;
+  line-height: 2;
+}
+body .container #startSection .button, body .container #authorSection .button {
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+body .container #startSection .button span, body .container #authorSection .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+body .container #startSection .button span:after, body .container #authorSection .button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+body .container #startSection .button:hover span, body .container #authorSection .button:hover span {
+  padding-right: 25px;
+}
+body .container #startSection .button:hover span:after, body .container #authorSection .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+body .container #startSection a:link, body .container #authorSection a:link {
+  color: #FFFFFF;
+}
+body .container #startSection a:visited, body .container #authorSection a:visited {
+  color: #FFFFFF;
+}
+body .container #startSection a:hover, body .container #authorSection a:hover {
+  color: cyan;
+}
+body .container #startSection .right, body .container #authorSection .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  width: calc(40% - 60px);
+  height: calc(100% - 60px);
+}
+body .container #startSection .right img, body .container #authorSection .right img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+body .container #startSection .left, body .container #authorSection .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  width: calc(60% - 60px);
+  height: calc(100% - 60px);
+  background-color: #808080;
+}
+body .container #top10Section, body .container #top10CountrySection, body .container #top10IndustrySection, body .container #countryBillionairesSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1e;
+  background-color: #f2f2f2;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+}
+body .container #top10Section h1, body .container #top10CountrySection h1, body .container #top10IndustrySection h1, body .container #countryBillionairesSection h1 {
+  font-size: 68px !important;
+  font-weight: bolder !important;
+  text-decoration: underline #23238d;
+  margin: 15px;
+}
+body .container #top10Section h2, body .container #top10CountrySection h2, body .container #top10IndustrySection h2, body .container #countryBillionairesSection h2 {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  margin: 15px;
+}
+body .container #top10Section p, body .container #top10CountrySection p, body .container #top10IndustrySection p, body .container #countryBillionairesSection p {
+  font-size: 16px !important;
+  margin: 10px;
+  line-height: 2;
+}
+body .container #top10Section a:link, body .container #top10CountrySection a:link, body .container #top10IndustrySection a:link, body .container #countryBillionairesSection a:link {
+  color: #FFFFFF;
+}
+body .container #top10Section a:visited, body .container #top10CountrySection a:visited, body .container #top10IndustrySection a:visited, body .container #countryBillionairesSection a:visited {
+  color: #FFFFFF;
+}
+body .container #top10Section a:hover, body .container #top10CountrySection a:hover, body .container #top10IndustrySection a:hover, body .container #countryBillionairesSection a:hover {
+  color: cyan;
+}
+body .container #top10Section .left, body .container #top10CountrySection .left, body .container #top10IndustrySection .left, body .container #countryBillionairesSection .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  width: calc(40% - 60px);
+  height: calc(100% - 60px);
+}
+body .container #top10Section .left img, body .container #top10CountrySection .left img, body .container #top10IndustrySection .left img, body .container #countryBillionairesSection .left img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50px;
+}
+body .container #top10Section .right, body .container #top10CountrySection .right, body .container #top10IndustrySection .right, body .container #countryBillionairesSection .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  width: calc(60% - 60px);
+  height: calc(100% - 60px);
+  background-color: #dddddd;
+}
+body .container #top10Section .right *, body .container #top10CountrySection .right *, body .container #top10IndustrySection .right *, body .container #countryBillionairesSection .right * {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

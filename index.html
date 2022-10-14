@@ -20,9 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
     <!-- Import pure.css -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-
+    <!--
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    -->
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,11 +32,12 @@
 
 <body>
     <div class="header">
-        <h1>Globe500: The Top 500 Richest People</h1>
+        <h1>Globe500</h1>
         <div class="topnav">
             <a class="active" href="#startSection">Start</a>
-            <a href="#aboutSection">About The Data</a>
-            <a href="#top10Section">Top 10</a>
+            <a href="#top10Section">Top 10 People</a>
+            <a href="#top10Countries">Top 10 Countries</a>
+            <a href="#top10Industries">Top 10 Industries</a>
             <a href="#countryBillionairesSection">Global View</a>
             <a href="#authorSection">About The Author</a>
         </div>
@@ -44,42 +45,68 @@
 
     <div class="container">
         <section id = "startSection">
-            <h1>Globe500: The Top 500 Richest People</h1>
-        </section>
-
-        <section id = "aboutSection">
-            <h1>About the Data</h1>
-            <p>
-
-            </p>
+            <div class="left">
+                <h1>
+                    Globe500:
+                    <br>
+                    The Top 500 Richest People.
+                </h1>
+                <h2>A Data Visualisation by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a>.</h2>
+                <p>This visualisation depicts data about the top 500 richest people retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>. This data represents the data as of October 13th 2022. Do explore the various visualisations to gain information. For an updated dataset feel free to check out Bloomberg's website.</p>
+                <a href="#top10Section"><button class="button" ><span>Explore </span></button></a>
+            </div>
+            <div class="right">
+                <img src="./img/money.jpg" alt="Money">
+            </div>
         </section>
 
         <section id="top10Section">
-            <h1>Top 10 Highest Net Worth</h1>
-            <div id="top10"></div>
+            <div class="left">
+                <h1>The 10 Richest</h1>
+            </div>
+            <div class="right">
+                <div id="top10"></div>
+            </div>
         </section>
 
         <section id="countryBillionairesSection">
-            <h1>Billionaires of Countries</h1>
-            <div id="countryBillionaires"></div>
+            <div class="left">
+                <h1>Billionaires of Countries</h1>
+            </div>
+            <div class="right">
+                <div id="countryBillionaires"></div>
+            </div>
         </section>
 
-        <section id = "authorSection">
-            <h1>Author</h1>
+        <section id = "authorSection" class="main">
+            <div class="left">
+                <h1>About: Amir Adrian Amir Hamzah</h1>
+                <h2>Computer & Data Scientist @ Monash University</h2>
+                <p>
+                    Currently in his final year of pursuing his Bachelor's degree in computer science and data science at Monash University Malaysia.
+                    <br>
+                    Check out his portfolio <a href="https://edenfrey.github.io" target="_blank" rel="noopener noreferrer">here</a>.
+                </p>
+            </div>
+            <div class="right">
+                <img src="./img/amiradrian.jpeg" alt="Amir Adrian">
+            </div>
         </section>
     </div>
-<!--
+
     <div class="footer">
         <div class="container-fluid">
             <div class="social-icons mt-4">
+                This visualisation is created by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a> for FIT3179.
                 <a href="https://www.instagram.com/adrian.xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.twitter.com/adrian_xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/amiradrian" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 <a href="https://www.twitch.tv/edenfrey" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+                <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
--->
+
     <!--Vega Embed-->
     <script type="text/javascript">
 
