@@ -41,14 +41,14 @@
   },
   "data": 
   {
-        "url": "../js/world_map/ne_110m.topojson",
+        "url": "world_map/ne_110m.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "layer": [
     {
       "data": 
       {
-        "url": "../js/world_map/oceans.topojson",
+        "url": "world_map/oceans.topojson",
         "format": {"type": "topojson", "feature": "oceans"}
       },
       "mark": {"type": "geoshape", "fill": "blue"}
@@ -56,7 +56,7 @@
     {
       "data": 
       {
-        "url": "../js/world_map/ne_110m.topojson",
+        "url": "world_map/ne_110m.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       }, 
       "mark": {"type": "geoshape", "fill": null, "stroke": "gray"}},
