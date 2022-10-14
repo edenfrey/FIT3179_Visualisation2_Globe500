@@ -72,6 +72,7 @@ body {
         position:absolute;
         top: 40px;
         bottom: 0px;
+        scroll-behavior: smooth;
 
         section {
             display: flex;
@@ -83,6 +84,7 @@ body {
             scroll-snap-align: start;
             color: #1c1c1e;
             background-color: #f2f2f2;
+            scroll-behavior: smooth;
 
             h1 {
                 font-size: 64;
