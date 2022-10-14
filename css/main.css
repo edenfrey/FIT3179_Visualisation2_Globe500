@@ -1,6 +1,5 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fefefe;
   scroll-behavior: smooth;
 }
 
@@ -19,6 +18,7 @@ body .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: #fefefe;
 }
 body .header .topnav {
   overflow: hidden;
@@ -74,6 +74,7 @@ body .container section {
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
+  color: #1c1c1e;
   background-color: #f2f2f2;
 }
 body .container section h1 {
@@ -86,10 +87,12 @@ body .container section h2 {
   font-weight: bold;
 }
 body .container section:nth-of-type(1) {
+  color: #f2f2f2;
   background-color: #210d57;
 }
 body .container section:nth-last-of-type(1) {
-  background-color: #1c1c1e;
+  color: #f2f2f2;
+  background-color: #210d57;
 }
 
 /*# sourceMappingURL=main.css.map */
