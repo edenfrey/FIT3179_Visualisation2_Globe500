@@ -12,7 +12,7 @@
         "min": 200,
         "max": 600,
         "step": 100,
-        "name": "Zoom: "
+        "name": "Zoom Control: "
       }
     },
     {

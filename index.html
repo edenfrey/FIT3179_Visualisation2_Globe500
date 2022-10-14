@@ -35,9 +35,9 @@
         <h1>Globe500</h1>
         <div class="topnav">
             <a class="active" href="#startSection">Start</a>
-            <a href="#top10Section">Top 10 People</a>
-            <a href="#top10Countries">Top 10 Countries</a>
-            <a href="#top10Industries">Top 10 Industries</a>
+            <a href="#top20Section">Top People</a>
+            <a href="#top10Countries">Top Countries</a>
+            <a href="#top10Industries">Top Industries</a>
             <a href="#countryBillionairesSection">Global View</a>
             <a href="#authorSection">About The Author</a>
         </div>
@@ -52,20 +52,20 @@
                     The Top 500 Richest People.
                 </h1>
                 <h2>A Data Visualisation by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a>.</h2>
-                <p>This visualisation depicts data about the top 500 richest people retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>. This data represents the data as of October 13th 2022. Do explore the various visualisations to gain information. For an updated dataset feel free to check out Bloomberg's website.</p>
-                <a href="#top10Section"><button class="button" ><span>Explore </span></button></a>
+                <p>Around the world we will find plenty of people. Not all of them are rich, some are. This visualisation explores data about the top 500 richest people and the industry they are associated with retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>. This data represents the data as of October 13th 2022. Do explore the various visualisations to gain information. For an updated dataset feel free to check out Bloomberg's website.</p>
+                <a href="#top20Section"><button class="button" ><span>Explore </span></button></a>
             </div>
             <div class="right">
                 <img src="./img/money.jpg" alt="Money">
             </div>
         </section>
 
-        <section id="top10Section">
+        <section id="top20Section">
             <div class="left">
-                <h1>The 10 Richest</h1>
+                <h1>The 20 Richest</h1>
             </div>
             <div class="right">
-                <div id="top10"></div>
+                <div id="top20"></div>
             </div>
         </section>
 
@@ -117,7 +117,7 @@
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
-        vegaEmbed('#top10', top10Billionaires, { "actions": false }).then(function(result){
+        vegaEmbed('#top20', top10Billionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
     

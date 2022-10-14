@@ -1,22 +1,37 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 1050,
-    "height": 650,
+    "width": 1000,
+    "height": 600,
     "background":"#dddddd",
     "data": {
         "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Billionaires_October_13_2022.csv"
+    },
+    "layer": [{
+        "mark": "bar"
+      }, {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 10,
+          "fontSize": 16
+        },
+        "encoding": {
+          "text": {"field": "Net Worth", "type": "quantitative"}
+        }
+      }],
+    "encoding": {
+        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions"},
+        "y": {"field": "Name", "type": "nominal"},
+        "color": {"field": "Industry"}
     },
     "transform": [
         {"window": [
             {"op": "rank", "as" : "rank"}
         ]
     }, {
-        "filter": "datum.rank <= 10"
+        "sort": "datum.rank",
+        "filter": "datum.rank <= 20"
     }
-    ],
-    "mark": "bar",
-    "encoding": {
-        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions"},
-        "y": {"field": "Name", "type": "nominal", "sort": "-x"}
+    ]
     }
-}
