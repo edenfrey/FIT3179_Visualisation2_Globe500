@@ -3,7 +3,7 @@
     "width": 1050,
     "height": 650,
     "data": {
-        "url": "../data/Billionaires_October_13_2022.csv"
+        "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Billionaires_October_13_2022.csv"
     },
     "transform": [
         {"window": [
