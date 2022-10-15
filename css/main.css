@@ -9,17 +9,21 @@ body {
   height: 100vh;
   margin: 0;
   scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1e;
 }
 body .header {
-  width: 100%;
+  width: 75%;
   height: 40px;
   background-color: #1c1c1e;
+  color: #dddddd;
   top: 0;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #fefefe;
 }
 body .header .topnav {
   overflow: hidden;
@@ -27,7 +31,7 @@ body .header .topnav {
 }
 body .header .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #dddddd;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -35,36 +39,45 @@ body .header .topnav a {
 }
 body .header .topnav a .active {
   background-color: #04AA6D;
-  color: white;
+  color: #dddddd;
 }
 body .header .topnav a:hover {
   color: blue;
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 body .footer {
-  width: 100%;
+  width: 75%;
   height: 20px;
+  background-color: #1c1c1e;
+  color: #dddddd;
   position: fixed;
   display: flex;
   bottom: 0;
-  background-color: #808080;
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  /* unvisited link */
+  /* visited link */
+}
+body .footer a:link {
+  color: #dddddd;
+}
+body .footer a:visited {
+  color: #dddddd;
 }
 body .footer .social-icons {
   font-size: 16px;
   cursor: pointer;
 }
 body .footer .fa-instagram:hover, body .footer .fa-twitter:hover, body .footer .fa-linkedin:hover, body .footer .fa-twitch:hover, body .footer .fa-github:hover {
-  color: #1c1c1e;
+  color: cyan;
 }
 body .footer .fab {
-  color: #000000;
+  color: #dddddd;
 }
 body .container {
-  width: 100%;
-  scroll-snap-type: y proximity;
+  width: 75%;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
   position: absolute;
   top: 40px;
@@ -82,8 +95,8 @@ body .container #startSection, body .container #authorSection {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #f2f2f2;
-  background-color: #210d57;
+  color: #dddddd;
+  background-color: #1c1c1e;
   /* unvisited link */
   /* visited link */
   /* mouse over link */
@@ -91,7 +104,7 @@ body .container #startSection, body .container #authorSection {
 body .container #startSection h1, body .container #authorSection h1 {
   font-size: 68px !important;
   font-weight: bolder !important;
-  text-decoration: underline #23238d;
+  text-decoration: underline #1c1c1e;
   margin: 15px;
 }
 body .container #startSection h2, body .container #authorSection h2 {
@@ -108,9 +121,9 @@ body .container #startSection .button, body .container #authorSection .button {
   vertical-align: middle;
   display: inline-block;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #dddddd;
   border: none;
-  color: #FFFFFF;
+  color: #1c1c1e;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -141,15 +154,15 @@ body .container #startSection .button:hover span:after, body .container #authorS
   right: 0;
 }
 body .container #startSection a:link, body .container #authorSection a:link {
-  color: #FFFFFF;
+  color: #dddddd;
 }
 body .container #startSection a:visited, body .container #authorSection a:visited {
-  color: #FFFFFF;
+  color: #dddddd;
 }
 body .container #startSection a:hover, body .container #authorSection a:hover {
   color: cyan;
 }
-body .container #startSection .right, body .container #authorSection .right {
+body .container #startSection .right40, body .container #authorSection .right40 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,12 +172,13 @@ body .container #startSection .right, body .container #authorSection .right {
   width: calc(40% - 60px);
   height: calc(100% - 60px);
 }
-body .container #startSection .right img, body .container #authorSection .right img {
+body .container #startSection .right40 img, body .container #authorSection .right40 img {
   max-width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
+  object-fit: cover;
 }
-body .container #startSection .left, body .container #authorSection .left {
+body .container #startSection .left60, body .container #authorSection .left60 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -175,69 +189,124 @@ body .container #startSection .left, body .container #authorSection .left {
   height: calc(100% - 60px);
   background-color: #808080;
 }
-body .container #top20Section, body .container #top10CountrySection, body .container #top10IndustrySection, body .container #countryBillionairesSection {
+body .container #top10CountrySection, body .container #top10IndustrySection {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: #1c1c1e;
-  background-color: #f2f2f2;
+  background-color: #dddddd;
   /* unvisited link */
   /* visited link */
   /* mouse over link */
 }
-body .container #top20Section h1, body .container #top10CountrySection h1, body .container #top10IndustrySection h1, body .container #countryBillionairesSection h1 {
+body .container #top10CountrySection h1, body .container #top10IndustrySection h1 {
   font-size: 32px !important;
   font-weight: bolder !important;
-  text-decoration: underline #23238d;
+  text-decoration: underline #1c1c1e;
   margin: 15px;
 }
-body .container #top20Section h2, body .container #top10CountrySection h2, body .container #top10IndustrySection h2, body .container #countryBillionairesSection h2 {
+body .container #top10CountrySection h2, body .container #top10IndustrySection h2 {
   font-size: 16px !important;
   font-weight: bold !important;
   margin: 15px;
 }
-body .container #top20Section p, body .container #top10CountrySection p, body .container #top10IndustrySection p, body .container #countryBillionairesSection p {
+body .container #top10CountrySection p, body .container #top10IndustrySection p {
   font-size: 16px !important;
   margin: 10px;
   line-height: 2;
 }
-body .container #top20Section a:link, body .container #top10CountrySection a:link, body .container #top10IndustrySection a:link, body .container #countryBillionairesSection a:link {
-  color: #FFFFFF;
+body .container #top10CountrySection a:link, body .container #top10IndustrySection a:link {
+  color: #dddddd;
 }
-body .container #top20Section a:visited, body .container #top10CountrySection a:visited, body .container #top10IndustrySection a:visited, body .container #countryBillionairesSection a:visited {
-  color: #FFFFFF;
+body .container #top10CountrySection a:visited, body .container #top10IndustrySection a:visited {
+  color: #dddddd;
 }
-body .container #top20Section a:hover, body .container #top10CountrySection a:hover, body .container #top10IndustrySection a:hover, body .container #countryBillionairesSection a:hover {
+body .container #top10CountrySection a:hover, body .container #top10IndustrySection a:hover {
   color: cyan;
 }
-body .container #top20Section .left, body .container #top10CountrySection .left, body .container #top10IndustrySection .left, body .container #countryBillionairesSection .left {
+body .container #top10CountrySection .left30, body .container #top10IndustrySection .left30 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin: 10px;
   padding: 20px;
-  width: calc(40% - 60px);
+  width: calc(30% - 60px);
   height: calc(100% - 60px);
 }
-body .container #top20Section .left img, body .container #top10CountrySection .left img, body .container #top10IndustrySection .left img, body .container #countryBillionairesSection .left img {
+body .container #top10CountrySection .left30 img, body .container #top10IndustrySection .left30 img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
 }
-body .container #top20Section .right, body .container #top10CountrySection .right, body .container #top10IndustrySection .right, body .container #countryBillionairesSection .right {
+body .container #top10CountrySection .right70, body .container #top10IndustrySection .right70 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px;
   padding: 20px;
-  width: calc(60% - 60px);
+  width: calc(70% - 60px);
   height: calc(100% - 60px);
   background-color: #dddddd;
 }
-body .container #top20Section .right *, body .container #top10CountrySection .right *, body .container #top10IndustrySection .right *, body .container #countryBillionairesSection .right * {
+body .container #top10CountrySection .right70 *, body .container #top10IndustrySection .right70 * {
+  max-width: 100%;
+  max-height: 100%;
+}
+body #top10Section, body #countryBillionairesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1e;
+  background-color: #dddddd;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+}
+body #top10Section .text, body #countryBillionairesSection .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+body #top10Section .text h1, body #countryBillionairesSection .text h1 {
+  font-size: 32px !important;
+  font-weight: bolder !important;
+  text-decoration: underline #1c1c1e;
+  margin: 15px;
+}
+body #top10Section .text h2, body #countryBillionairesSection .text h2 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  margin: 15px;
+}
+body #top10Section .text p, body #countryBillionairesSection .text p {
+  font-size: 16px !important;
+  margin: 10px;
+  line-height: 2;
+}
+body #top10Section a:link, body #countryBillionairesSection a:link {
+  color: #dddddd;
+}
+body #top10Section a:visited, body #countryBillionairesSection a:visited {
+  color: #dddddd;
+}
+body #top10Section a:hover, body #countryBillionairesSection a:hover {
+  color: cyan;
+}
+body #top10Section .chart, body #countryBillionairesSection .chart {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 20px);
+  height: calc(60% - 20px);
+}
+body #top10Section .chart *, body #countryBillionairesSection .chart * {
   max-width: 100%;
   max-height: 100%;
 }

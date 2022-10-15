@@ -1,0 +1,94 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "bar": {
+        "height": 30,
+        "tooltip":true
+      }
+    },
+    "width": 1000,
+    "height": 600,
+    "background":"#dddddd",
+    "title":"Top 10 Richest by Industry",
+    "data": {
+        "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Billionaires_October_13_2022.csv"
+    },
+    "params": [
+      {
+        "name": "industry_sel",
+        "value": "Technology",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Technology",
+            "Industrial",
+            "Diversified",
+            "Finance",
+            "Consumer",
+            "Retail",
+            "Food & Beverage",
+            "Energy",
+            "Real Estate",
+            "Health Care",
+            "Commodities",
+            "Media & Telecom",
+            "Entertainment",
+            "Services"
+          ],
+          "labels": [
+            "All",
+            "Technology",
+            "Industrial",
+            "Diversified",
+            "Finance",
+            "Consumer",
+            "Retail",
+            "Food & Beverage",
+            "Energy",
+            "Real Estate",
+            "Health Care",
+            "Commodities",
+            "Media & Telecom",
+            "Entertainment",
+            "Services"],
+          "name": "Industry: "
+        }
+      }
+    ],
+    "layer": [
+      {
+        "mark": "bar"
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontWeight":"bold",
+          "color":"#fefefe",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -1,
+          "fontSize": 16
+        }
+      }
+    ],
+    "encoding": {
+        "y": {"field": "Name", "type": "nominal","sort": {"op": "sum", "field": "Net Worth", "order":"descending"}},
+        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions"},
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {"field": "Net Worth", "type": "quantitative", "title": "Net Worth (Billion USD)"}
+        ],
+        "text": {"field": "Net Worth", "type": "quantitative"}
+    },
+    "transform": [
+    {
+      "filter": {"field": "Industry", "equal": {"expr": "industry_sel"}}
+    },
+    {"window": [
+      {"op": "rank", "as" : "rank"}
+  ]
+},
+{"filter": "datum.rank <= 10"}
+    ]
+    }

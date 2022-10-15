@@ -1,7 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1050,
-  "height": 650,
+  "title":"",
+  "autosize":"fit",
+  "width": 1200,
+  "height": 600,
   "background":"#dddddd",
   "params": [
     {
@@ -91,8 +93,7 @@
         "type": "quantitative",
         "scale": {
             "type": "log", 
-            "scheme": "greens"
-            
+            "scheme": "greens"        
             }
       },
       "tooltip": [

@@ -8,7 +8,7 @@
     <!--Website Icon-->
     <link rel="icon" href="http://example.com/favicon.png">
 
-    <!--Our own styling-->
+    <!--My own styling-->
     <link rel = "stylesheet" href = "css/main.css" type="text/css">
     
     <!-- Font awesome for icons-->
@@ -19,10 +19,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-    <!-- Import pure.css -->
-    <!--
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    -->
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,41 +41,39 @@
 
     <div class="container">
         <section id = "startSection">
-            <div class="left">
+            <div class="left60">
                 <h1>
-                    Globe500:
+                    Globe500
                     <br>
-                    The Top 500 Richest People.
+                    The 500 Richest People
                 </h1>
-                <h2>A Data Visualisation by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a>.</h2>
-                <p>Around the world we will find plenty of people. Not all of them are rich, some are. This visualisation explores data about the top 500 richest people and the industry they are associated with retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>. This data represents the data as of October 13th 2022. Do explore the various visualisations to gain information. For an updated dataset feel free to check out Bloomberg's website.</p>
+                <h2>A Data Visualisation by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a></h2>
+                <p>Around the world we will find plenty of people. Not all of them are rich, some are. This visualisation explores data about the top 500 richest people and the industry they are associated with retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>.<br>This visualisation represents the data as of October 13th 2022.For an updated dataset feel free to check out Bloomberg's website.</p>
                 <a href="#top20Section"><button class="button" ><span>Explore </span></button></a>
             </div>
-            <div class="right">
+            <div class="right40">
                 <img src="./img/money.jpg" alt="Money">
             </div>
         </section>
 
-        <section id="top20Section">
-            <div class="left">
-                <h1>The 20 Richest</h1>
+        <section id="top10Section">
+            <div class="chart">
+                <div id="top10"></div>
             </div>
-            <div class="right">
-                <div id="top20"></div>
-            </div>
+            <div class="text"><h1>The Rich</h1></div>
         </section>
 
         <section id="countryBillionairesSection">
-            <div class="left">
-                <h1>Billionaires of Countries</h1>
-            </div>
-            <div class="right">
+            <div class="chart">
                 <div id="countryBillionaires"></div>
+            </div>
+            <div class="text">
+                <h1>Billionaires of Countries</h1>
             </div>
         </section>
 
         <section id = "authorSection" class="main">
-            <div class="left">
+            <div class="left60">
                 <h1>About: Amir Adrian Amir Hamzah</h1>
                 <h2>Computer & Data Scientist @ Monash University</h2>
                 <p>
@@ -88,7 +82,7 @@
                     Check out his portfolio <a href="https://edenfrey.github.io" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
             </div>
-            <div class="right">
+            <div class="right40">
                 <img src="./img/amiradrian.jpeg" alt="Amir Adrian">
             </div>
         </section>
@@ -97,7 +91,7 @@
     <div class="footer">
         <div class="container-fluid">
             <div class="social-icons mt-4">
-                This visualisation is created by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a> for FIT3179.
+                This visualisation is created by Amir Adrian Amir Hamzah for FIT3179
                 <a href="https://www.instagram.com/adrian.xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.twitter.com/adrian_xhtml" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/amiradrian" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
@@ -111,13 +105,13 @@
     <script type="text/javascript">
 
         var countryBillionaires = "js/Country_Billionaires.vg.json";
-        var top20Billionaires = "js/Top_20_Billionaires.vg.json"
+        var top10Billionaires = "js/Top_10_Billionaires.vg.json"
         
         vegaEmbed('#countryBillionaires', countryBillionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
-        vegaEmbed('#top20', top20Billionaires, { "actions": false }).then(function(result){
+        vegaEmbed('#top10', top10Billionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
     
