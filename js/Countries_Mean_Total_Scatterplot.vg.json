@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
+    "width": 700,
     "height": 600,
+    "background":"#dddddd",
     "title": {"text":"Average Net Worth vs Total Net Worth by Country","fontSize":16},
     "data": {
       "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Country_Average_Total.csv"
@@ -50,50 +51,58 @@
       }
     },
     "layer": [
-      {
-        "mark": "circle",
-        "encoding": {
-          "size": {
-            "field": "Count",
-            "title": "Count of Billionaire",
-            "type": "quantitative"
-          },
-          "opacity": {"value": 1},
-          "tooltip": [
-            {"field": "Country", "type": "nominal"},
-            {"field": "Total", "title": "Total Net Worth", "type": "quantitative", "format": ","},
-            {"field": "Mean", "title": "Average Net Worth", "type": "quantitative", "format": ","},
-            {"field": "Count", "title": "Billionaire Count", "type": "quantitative"}
-          ] 
-        }
-      },
-      {
-        "mark": {
-          "type": "text",
-          "align": "right",
-          "baseline": "middle",
-          "dx": -12,
-          "fontSize": 11.5,
-          "fontStyle": "italic"
-        },
-        "encoding": {
-          "text": {"field": "Country", "type": "nominal"},
-          "color": {"value": "black"},
-          "opacity": {
-            "condition": {
-              "test": "datum['Country'] == 'China' || datum['Country'] == 'France' || datum['Country'] == 'United States' || datum['Country'] == 'Japan'",
-              "value": 1
+        {
+          "mark": "circle",
+          "encoding": {
+            "size": {
+                "legend":{"orient": "top","title":null},
+              "field": "Count",
+              "title": "Count of Billionaire",
+              "type": "quantitative",
+              "scale": {
+                "type": "threshold",
+                "domain": [5,25,75,100,150,200],
+                "range": [50,250,750,1000,1500,2000]
+              }
             },
-            "value": 0
+            "opacity": {"value": 1},
+            "tooltip": [
+              {"field": "Country", "type": "nominal"},
+              {"field": "Mean", "title": "Average net worth of country", "type": "quantitative", "format": ","},
+              {"field": "Total", "title": "Total net worth of country", "type": "quantitative", "format": ","},
+              {"field": "Count", "title": "Billionaire count in country", "type": "quantitative", "format": ","}
+            ]
+            
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "dx": -12,
+            "fontSize": 11.5,
+            "fontStyle": "italic"
           },
-          "tooltip": [
-            {"field": "Country", "type": "nominal"},
-            {"field": "Total", "title": "Total Net Worth", "type": "quantitative", "format": ","},
-            {"field": "Mean", "title": "Average Net Worth", "type": "quantitative", "format": ","},
-            {"field": "Count", "title": "Billionaire Count", "type": "quantitative", "format":""}
-          ]
+          "encoding": {
+            "text": {"field": "Country", "type": "nominal"},
+            "color": {"value": "black"},
+            "opacity": {
+              "condition": {
+                "test": "datum['Country'] == 'China' || datum['Country'] == 'France' || datum['Country'] == 'United States' || datum['Country'] == 'Japan'|| datum['Country'] == 'United Arab Emirates'|| datum['Country'] == 'Australia'|| datum['Country'] == 'Mexico' ",
+                "value": 1
+              },
+              "value": 0
+            },
+            "tooltip": [
+                {"field": "Country", "type": "nominal"},
+                {"field": "Mean", "title": "Average net worth of country", "type": "quantitative", "format": ","},
+                {"field": "Total", "title": "Total net worth of country", "type": "quantitative", "format": ","},
+                {"field": "Count", "title": "Billionaire count in country", "type": "quantitative", "format": ","}
+            ]
+          }
         }
-      }
-
-    ]
+  
+      ]
+  
   }

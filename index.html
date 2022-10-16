@@ -62,16 +62,18 @@
             </div>
             <div class="text">
                 <h1>Billionaires of Countries</h1>
+                <p>There are plentiful of billionaires around the world, yet only a handful are at the top. In the map above we can see the location of the top 500 billionaires in the world. The notable countries containing the most billionaires are USA (183), China (77), Russia (26), Germany (21), and tying on 5th is India and Hong Kong (18). Something to note is the sheer difference in numbers from the 1st and 2nd place. It really shows how many of the richest people are in the USA.</p>
             </div>
         </section>
 
         <section id="top10Section">
             <div class="left30">
-                <h1>The Richest by Industry</h1>
+                <h1>The Top by Industry</h1>
                 <p>
                     As of October 13 2022, majority of the richest 10 people are in the technology industry. 
-                    <br>
-                    The various people include: Elon Musk, Jeff Bezos.
+                    The various people include: Elon Musk, Jeff Bezos, and Bill Gates.<br>
+                    However, there are a few notable names within the top 10 such as Warren Buffet who is in the diversified industry.<br>
+                    To view the top 10 by industry use the selector at the bottom of the chart.
                 </p>
             </div>
             <div class="right70">
@@ -81,9 +83,9 @@
 
         <section id="countryMeanSumSection">
             <div class="left30">
-
+                <h1>Countries Net Worth:<br>Total vs Average</h1>
             </div>
-            <div class="right70">
+            <div id = "countryMeanSum" class="right70">
 
             </div>
         </section>
@@ -130,7 +132,8 @@
     <script type="text/javascript">
 
         var countryBillionaires = "js/Country_Billionaires.vg.json";
-        var top10Billionaires = "js/Top_10_Billionaires.vg.json"
+        var top10Billionaires = "js/Top_10_Billionaires.vg.json";
+        var countryMeanTotal = 'js/Countries_Mean_Total_Scatterplot.vg.json'
         
         vegaEmbed('#countryBillionaires', countryBillionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -139,7 +142,13 @@
         vegaEmbed('#top10', top10Billionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
+
+        vegaEmbed('#countryMeanSum', countryMeanTotal, { "actions": false }).then(function(result){
+        // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
     
+
+        
     </script>
 </body>
 </html>

@@ -268,6 +268,7 @@ body #countryBillionairesSection {
 }
 body #countryBillionairesSection .text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;

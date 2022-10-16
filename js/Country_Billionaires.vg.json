@@ -3,7 +3,7 @@
   "title":{"text":"Number of Billionaires in Each Country", "fontSize":16},
   "autosize":"fit",
   "width": 1200,
-  "height": 650,
+  "height": 600,
   "background":"#dddddd",
   "params": [
     {
@@ -92,7 +92,7 @@
         "field": "Number of Billionaires",
         "type": "quantitative",
         "legend":{
-          "orient": "bottom",
+          "orient": "bottom-left",
           "labelFontSize":12,
           "titleFontSize":12
         },
