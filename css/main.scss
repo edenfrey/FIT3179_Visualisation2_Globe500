@@ -131,9 +131,9 @@ body {
             vertical-align: middle;
             display: inline-block;
             border-radius: 4px;
-            background-color: #dddddd;
+            background-color: #1c1c1e;
             border: none;
-            color: #1c1c1e;
+            color: #dddddd;
             text-align: center;
             font-size: 28px;
             padding: 20px;
@@ -215,7 +215,7 @@ body {
             }
         }
 
-        #top10CountrySection, #top10IndustrySection{
+        #top10Section, #countryMeanSumSection, #industrySection{
             display: flex;
             flex-direction: row;
             justify-content:center;
@@ -293,7 +293,7 @@ body {
         }
     }
 
-    #top10Section, #countryBillionairesSection {
+    #countryBillionairesSection {
             display: flex;
             flex-direction: column;
             justify-content:center;
@@ -301,6 +301,7 @@ body {
             
             color: #1c1c1e;
             background-color:#dddddd;
+            
             .text{
                 display: flex;
                 justify-content:center;
@@ -342,12 +343,11 @@ body {
             }
             
             .chart {
-                padding: 10px;
                 display: flex;
                 justify-content:center;
                 align-items: center;
-                width: calc(100% - 20px);
-                height: calc(60% - 20px);
+                width: 100%;
+                height: 60%;
 
                 *{
                     max-width: 100%;

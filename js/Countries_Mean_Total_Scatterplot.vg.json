@@ -1,0 +1,99 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "title": {"text":"Average Net Worth vs Total Net Worth by Country","fontSize":16},
+    "data": {
+      "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Country_Average_Total.csv"
+    },
+    "params": [
+      {
+        "name": "min_net_worth_total",
+        "value": 0,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 3000,
+          "step": 1,
+          "name": "Minimum Net Worth of Country (USD Billions): "
+        }
+      },
+      {
+        "name": "max_net_worth_total",
+        "value": 3000,
+        "bind": {
+          "input": "range",
+          "min": 0,
+          "max": 3000,
+          "step": 1,
+          "name": "Maximum Net Worth of Country (USD Billions): "
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.Total <= max_net_worth_total"},
+      {"filter": "datum.Total >= min_net_worth_total"}
+    ],
+
+    "encoding": {
+      "x": {
+        "field": "Total",
+        "type": "quantitative",
+        "title":"Total Net Worth of Country",
+        "scale": {"type": "symlog", "domain": [0, 3000]}
+      },
+      "y": {
+        "field": "Mean",
+        "type": "quantitative",
+        "title": "Average Net Worth of Country",
+        "scale": {"type": "linear", "domain": [0, 30]}
+      }
+    },
+    "layer": [
+      {
+        "mark": "circle",
+        "encoding": {
+          "size": {
+            "field": "Count",
+            "title": "Count of Billionaire",
+            "type": "quantitative"
+          },
+          "opacity": {"value": 1},
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Total", "title": "Total Net Worth", "type": "quantitative", "format": ","},
+            {"field": "Mean", "title": "Average Net Worth", "type": "quantitative", "format": ","},
+            {"field": "Count", "title": "Billionaire Count", "type": "quantitative"}
+          ] 
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "baseline": "middle",
+          "dx": -12,
+          "fontSize": 11.5,
+          "fontStyle": "italic"
+        },
+        "encoding": {
+          "text": {"field": "Country", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity": {
+            "condition": {
+              "test": "datum['Country'] == 'China' || datum['Country'] == 'France' || datum['Country'] == 'United States' || datum['Country'] == 'Japan'",
+              "value": 1
+            },
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal"},
+            {"field": "Total", "title": "Total Net Worth", "type": "quantitative", "format": ","},
+            {"field": "Mean", "title": "Average Net Worth", "type": "quantitative", "format": ","},
+            {"field": "Count", "title": "Billionaire Count", "type": "quantitative", "format":""}
+          ]
+        }
+      }
+
+    ]
+  }

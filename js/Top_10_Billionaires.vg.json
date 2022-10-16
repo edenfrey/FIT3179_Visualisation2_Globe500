@@ -1,26 +1,22 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {
-      "bar": {
-        "height": 30,
-        "tooltip":true
-      }
     },
-    "width": 1000,
+    "width": 700,
     "height": 600,
     "background":"#dddddd",
-    "title":"Top 10 Richest by Industry",
+    "title":{"text":"Top 10 Richest by Industry","fontSize":16},
     "data": {
         "url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Billionaires_October_13_2022.csv"
     },
     "params": [
       {
         "name": "industry_sel",
-        "value": "Technology",
+        "value": "null",
         "bind": {
           "input": "select",
           "options": [
-            null,
+            "null",
             "Technology",
             "Industrial",
             "Diversified",
@@ -51,44 +47,84 @@
             "Commodities",
             "Media & Telecom",
             "Entertainment",
-            "Services"],
+            "Services"
+          ],
           "name": "Industry: "
         }
       }
     ],
     "layer": [
-      {
-        "mark": "bar"
-      },
+      {"mark": {"type": "bar", "yOffset": 5, "cornerRadiusEnd": 2, "height": {"band": 0.5}}},
       {
         "mark": {
           "type": "text",
           "fontWeight":"bold",
-          "color":"#fefefe",
-          "align": "right",
-          "baseline": "middle",
-          "dx": -1,
-          "fontSize": 16
+          "color":"#1c1d1e",
+          "align": "left",
+          "baseline": "top",
+          "dx": 2,
+          "fontSize": 12
         }
       }
     ],
     "encoding": {
-        "y": {"field": "Name", "type": "nominal","sort": {"op": "sum", "field": "Net Worth", "order":"descending"}},
-        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions"},
+        "y": {"field": "Name", "type": "nominal","sort": {"op": "sum", "field": "Net Worth", "order":"descending"},"scale": {"padding": 0},
+        "axis": {
+          "bandPosition": 0,
+          "grid": true,
+          "domain": false,
+          "ticks": false,
+          "labelFontSize":12,
+          "labelAlign": "left",
+          "labelBaseline": "middle",
+          "labelPadding": -5,
+          "labelOffset": -20,
+          "titleX": 5,
+          "titleY": -5,
+          "titleAngle": 0,
+          "titleFontSize":12,
+          "titleAlign": "left"
+        }},
+        "x": {"field": "Net Worth", "type": "quantitative", "title": "Net Worth in Billions","axis":{"labelFontSize":12,"titleFontSize":12,"labelLimit": 0,"grid": false}},
         "tooltip": [
           {"field": "Country", "type": "nominal", "title": "Country"},
-          {"field": "Net Worth", "type": "quantitative", "title": "Net Worth (Billion USD)"}
+          {"field": "Net Worth", "type": "quantitative", "title": "Net Worth (Billion USD)"},
+          {"field": "Industry", "type": "nominal", "title": "Industry"}
         ],
-        "text": {"field": "Net Worth", "type": "quantitative"}
+        "text": {"field": "Net Worth", "type": "quantitative"},
+        "color": {
+          "legend":{"labelFontSize":12,"titleFontSize":12},
+          "field": "Industry",
+          "type": "nominal",
+          "scale": {"domain": ["Technology",
+          "Industrial",
+          "Diversified",
+          "Finance",
+          "Consumer",
+          "Retail",
+          "Food & Beverage",
+          "Energy",
+          "Real Estate",
+          "Health Care",
+          "Commodities",
+          "Media & Telecom",
+          "Entertainment",
+          "Services"], "scheme":["#e60049", "#0bb4ff", "#50e991", "#e6d800", "#9b19f5", "#ffa300", "#dc0ab4", "#b3d4ff", "#00bfa0"]}
+        }
+        
     },
     "transform": [
+      {"window": [
+        {"op": "rank", "as" : "rank1"}
+      ]
+      },
     {
-      "filter": {"field": "Industry", "equal": {"expr": "industry_sel"}}
+      "filter": "industry_sel=='null'?datum.rank1 <= 10:datum.Industry == industry_sel"
     },
     {"window": [
-      {"op": "rank", "as" : "rank"}
-  ]
-},
-{"filter": "datum.rank <= 10"}
+      {"op": "rank", "as" : "rank2"}
+    ]
+    },
+{"filter": "datum.rank2 <= 10"}
     ]
     }

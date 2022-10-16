@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title":"",
+  "title":{"text":"Number of Billionaires in Each Country", "fontSize":16},
   "autosize":"fit",
   "width": 1200,
-  "height": 600,
+  "height": 650,
   "background":"#dddddd",
   "params": [
     {
@@ -91,10 +91,15 @@
       "color": {
         "field": "Number of Billionaires",
         "type": "quantitative",
+        "legend":{
+          "orient": "bottom",
+          "labelFontSize":12,
+          "titleFontSize":12
+        },
         "scale": {
             "type": "log", 
             "scheme": "greens"        
-            }
+          }
       },
       "tooltip": [
         {"field": "properties.NAME", "type": "nominal", "title": "Country Name"},
