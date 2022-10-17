@@ -189,7 +189,7 @@ body .container #startSection .left60, body .container #authorSection .left60 {
   height: calc(100% - 60px);
   background-color: #808080;
 }
-body .container #top10Section, body .container #countryMeanSumSection, body .container #industrySection {
+body .container #top10Section, body .container #countryMeanSumSection, body .container #industriesSection {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -200,32 +200,32 @@ body .container #top10Section, body .container #countryMeanSumSection, body .con
   /* visited link */
   /* mouse over link */
 }
-body .container #top10Section h1, body .container #countryMeanSumSection h1, body .container #industrySection h1 {
+body .container #top10Section h1, body .container #countryMeanSumSection h1, body .container #industriesSection h1 {
   font-size: 32px !important;
   font-weight: bolder !important;
   text-decoration: underline #1c1c1e;
   margin: 15px;
 }
-body .container #top10Section h2, body .container #countryMeanSumSection h2, body .container #industrySection h2 {
+body .container #top10Section h2, body .container #countryMeanSumSection h2, body .container #industriesSection h2 {
   font-size: 16px !important;
   font-weight: bold !important;
   margin: 15px;
 }
-body .container #top10Section p, body .container #countryMeanSumSection p, body .container #industrySection p {
+body .container #top10Section p, body .container #countryMeanSumSection p, body .container #industriesSection p {
   font-size: 16px !important;
   margin: 10px;
   line-height: 2;
 }
-body .container #top10Section a:link, body .container #countryMeanSumSection a:link, body .container #industrySection a:link {
+body .container #top10Section a:link, body .container #countryMeanSumSection a:link, body .container #industriesSection a:link {
   color: #dddddd;
 }
-body .container #top10Section a:visited, body .container #countryMeanSumSection a:visited, body .container #industrySection a:visited {
+body .container #top10Section a:visited, body .container #countryMeanSumSection a:visited, body .container #industriesSection a:visited {
   color: #dddddd;
 }
-body .container #top10Section a:hover, body .container #countryMeanSumSection a:hover, body .container #industrySection a:hover {
+body .container #top10Section a:hover, body .container #countryMeanSumSection a:hover, body .container #industriesSection a:hover {
   color: cyan;
 }
-body .container #top10Section .left30, body .container #countryMeanSumSection .left30, body .container #industrySection .left30 {
+body .container #top10Section .left30, body .container #countryMeanSumSection .left30, body .container #industriesSection .left30 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,12 +235,12 @@ body .container #top10Section .left30, body .container #countryMeanSumSection .l
   width: calc(30% - 60px);
   height: calc(100% - 60px);
 }
-body .container #top10Section .left30 img, body .container #countryMeanSumSection .left30 img, body .container #industrySection .left30 img {
+body .container #top10Section .left30 img, body .container #countryMeanSumSection .left30 img, body .container #industriesSection .left30 img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
 }
-body .container #top10Section .right70, body .container #countryMeanSumSection .right70, body .container #industrySection .right70 {
+body .container #top10Section .right70, body .container #countryMeanSumSection .right70, body .container #industriesSection .right70 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -251,7 +251,7 @@ body .container #top10Section .right70, body .container #countryMeanSumSection .
   height: calc(100% - 60px);
   background-color: #dddddd;
 }
-body .container #top10Section .right70 *, body .container #countryMeanSumSection .right70 *, body .container #industrySection .right70 * {
+body .container #top10Section .right70 *, body .container #countryMeanSumSection .right70 *, body .container #industriesSection .right70 * {
   max-width: 100%;
   max-height: 100%;
 }

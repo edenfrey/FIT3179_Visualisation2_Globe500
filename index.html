@@ -92,11 +92,9 @@
 
         <section id="industriesSection">
             <div class="left30">
-
+                <h1>The Industries</h1>
             </div>
-            <div class="right70">
-
-            </div>
+            <div id = "industries" class="right70"></div>
         </section>
 
         <section id = "authorSection" class="main">
@@ -134,6 +132,7 @@
         var countryBillionaires = "js/Country_Billionaires.vg.json";
         var top10Billionaires = "js/Top_10_Billionaires.vg.json";
         var countryMeanTotal = 'js/Countries_Mean_Total_Scatterplot.vg.json'
+        var industries = 'js/Industires_Radial_Chart.vg.json'
         
         vegaEmbed('#countryBillionaires', countryBillionaires, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -146,9 +145,11 @@
         vegaEmbed('#countryMeanSum', countryMeanTotal, { "actions": false }).then(function(result){
         // Access the vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
-    
 
-        
+        vegaEmbed('#industries', industries, {"actions":false}).then(function(result){
+
+        }).catch(console.error);
+    
     </script>
 </body>
 </html>

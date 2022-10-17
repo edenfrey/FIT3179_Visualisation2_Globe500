@@ -35,23 +35,26 @@
       {"filter": "datum.Total <= max_net_worth_total"},
       {"filter": "datum.Total >= min_net_worth_total"}
     ],
-
     "encoding": {
       "x": {
         "field": "Total",
         "type": "quantitative",
         "title":"Total Net Worth of Country",
-        "scale": {"type": "symlog", "domain": [0, 3000]}
+        "scale": {"type": "symlog", "domain": [0, 4000]}
       },
       "y": {
         "field": "Mean",
         "type": "quantitative",
         "title": "Average Net Worth of Country",
-        "scale": {"type": "linear", "domain": [0, 30]}
+        "scale": {"type": "linear", "domain": [3, 30]}
       }
     },
     "layer": [
-        {
+        {"params": [{
+        "name": "grid",
+        "select": "interval",
+        "bind": "scales"
+        }],
           "mark": "circle",
           "encoding": {
             "size": {
