@@ -52,18 +52,18 @@
       }
     ],
     "layer": [
-      {"mark": {"type": "bar", "yOffset": 5, "cornerRadiusEnd": 2, "height": {"band": 0.5}}},
       {
         "mark": {
           "type": "text",
           "fontWeight":"bold",
-          "color":"#1c1d1e",
           "align": "left",
           "baseline": "top",
+          "fill":"#1c1c1e",
           "dx": 2,
           "fontSize": 12
         }
-      }
+      },
+      {"mark": {"type": "bar", "yOffset": 5, "cornerRadiusEnd": 2, "height": {"band": 0.5}}}
     ],
     "encoding": {
         "y": {"field": "Name", "type": "nominal","sort": {"op": "sum", "field": "Net Worth", "order":"descending"},"scale": {"padding": 0},
@@ -107,8 +107,9 @@
           "Commodities",
           "Media & Telecom",
           "Entertainment",
-          "Services"], "scheme":["#e60049", "#0bb4ff", "#50e991", "#e6d800", "#9b19f5", "#ffa300", "#dc0ab4", "#b3d4ff", "#00bfa0"]}
+          "Services"], "scheme":"category20b"}
         }
+        
         
     },
     "transform": [

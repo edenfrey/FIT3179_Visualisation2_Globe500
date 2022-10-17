@@ -30,12 +30,12 @@
     <div class="header">
         <h1>Globe500</h1>
         <div class="topnav">
-            <a class="active" href="#countryBillionairesSection">Start</a>
+            <a class="active" href="#startSection">Home</a>
             <a href="#countryBillionairesSection">Global View</a>
-            <a href="#top10Section">Top 10 by Industry</a>
-            <a href="#countryMeanSumSection">Countries Sum vs Mean</a>
-            <a href="#industriesSection">The Industries</a>
-            <a href="#authorSection">About The Author</a>
+            <a href="#top10Section">Top 10</a>
+            <a href="#countryMeanSumSection">Countries</a>
+            <a href="#industriesSection">Industries</a>
+            <a href="#authorSection">The Author</a>
         </div>
     </div>
 
@@ -48,7 +48,7 @@
                     The 500 Richest People
                 </h1>
                 <h2>A Data Visualisation by <a href="https://www.github.com/edenfrey" target="_blank" rel="noopener noreferrer">Amir Adrian Amir Hamzah</a></h2>
-                <p>Around the world we will find plenty of people. Not all of them are rich, some are. This visualisation explores data about the top 500 richest people and the industry they are associated with using web-scraped data retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>.<br>This visualisation represents the data as of October 13th 2022.For an updated dataset feel free to check out Bloomberg's website.</p>
+                <p>Around the world we will find plenty of people. Not all of them are rich, some are. This visualisation explores data about the top 500 richest people and the industry they are associated with using web-scraped data retrieved from <a href="https://www.bloomberg.com/billionaires" target="_blank" rel="noopener noreferrer">Bloomberg's Billionaires Index</a>.<br>This visualisation represents the data as of October 13th 2022. For an updated dataset feel free to check out Bloomberg's website.</p>
                 <a href="#countryBillionairesSection"><button class="button" ><span>Explore </span></button></a>
             </div>
             <div class="right40">
@@ -61,8 +61,8 @@
                 <div id="countryBillionaires"></div>
             </div>
             <div class="text">
-                <h1>Billionaires of Countries</h1>
-                <p>There are plentiful of billionaires around the world, yet only a handful are at the top. In the map above we can see the location of the top 500 billionaires in the world. The notable countries containing the most billionaires are USA (183), China (77), Russia (26), Germany (21), and tying on 5th is India and Hong Kong (18). Something to note is the sheer difference in numbers from the 1st and 2nd place. It really shows how many of the richest people are in the USA.</p>
+                <h1>Countries & Billionaires</h1>
+                <p>There are plentiful of billionaires around the world, yet only a handful are at the top. In the map above we can see the location of the top 500 billionaires in the world. The notable countries containing the most billionaires are <span class="bold_red">USA(183), China (77), Russia (26), Germany (21), and tying on 5th is India and Hong Kong (18)</span>. Something to note is the sheer difference in numbers from the 1st and 2nd place. It really shows how many of the richest people are in the USA.</p>
             </div>
         </section>
 
@@ -71,9 +71,9 @@
                 <h1>The Top by Industry</h1>
                 <p>
                     As of October 13 2022, majority of the richest 10 people are in the technology industry. 
-                    The various people include: Elon Musk, Jeff Bezos, and Bill Gates.<br>
-                    However, there are a few notable names within the top 10 such as Warren Buffet who is in the diversified industry.<br>
-                    To view the top 10 by industry use the selector at the bottom of the chart.
+                    The various people include: <span class="bold_red">Elon Musk, Jeff Bezos, and Bill Gates.</span><br><br>
+                    However, there are a few notable names within the top 10 in different industries such as Warren Buffet who is in the diversified industry.<br><br>
+                    Note: Use the selector below the chart to filter by industry.
                 </p>
             </div>
             <div class="right70">
@@ -84,6 +84,13 @@
         <section id="countryMeanSumSection">
             <div class="left30">
                 <h1>Countries Net Worth:<br>Total vs Average</h1>
+                <p>
+                    As we can see in the following scatter plot, we see that the <span class="bold_red">United States of America has the highest total net worth</span> when it comes to the top 500 but has an "in-the-middle" average. This can be due to the fact that the USA also has the highest percentage of billionaires.
+                    <br>
+                    The highest average can be found in <span class="bold_red">Mexico</span> which only has 4 billionaires within the top 500. Mexico however has only an "in-the-middle" total.
+                    <br><br>
+                    Note: Use the sliders at the bottom to filter the net worth of the countries and use your mouse wheel to zoom in and out.
+                </p>
             </div>
             <div id = "countryMeanSum" class="right70">
 
@@ -92,7 +99,12 @@
 
         <section id="industriesSection">
             <div class="left30">
-                <h1>The Industries</h1>
+                <h1>Industries:<br>The Numbers</h1>
+                <p>
+                    Finally, to answer the question: Which industry is best? There are various interpretations of what is "best". We are simply taking the total net worth of the top 500 richest people in each industry. Thus the following chart.
+                    <br>
+                    <span class="bold_red">Technology, industrial, diversified, and finance</span> are the top industries with the highest net worths but do note that technology also has 71 candidates within the top 500 and can potentially lead to a lower average net worth.
+                </p>
             </div>
             <div id = "industries" class="right70"></div>
         </section>
@@ -102,8 +114,10 @@
                 <h1>About: Amir Adrian Amir Hamzah</h1>
                 <h2>Computer & Data Scientist @ Monash University</h2>
                 <p>
-                    Currently in his final year of pursuing his Bachelor's degree in computer science and data science at Monash University Malaysia.
+                    Currently in his final year of pursuing his Bachelor's degree in computer science and data science at Monash University Malaysia. He is currently interested in various fields: Machine Learning, Automation, Web Development, Data Analysis, and Cyber Security.
                     <br>
+                    Other hobbies and interests include: Video Content Creation (Script writing, videography, video editing) and Sports (Swimming, Volleyball, Basketball)
+                    <br><br>
                     Check out his portfolio <a href="https://edenfrey.github.io" target="_blank" rel="noopener noreferrer">here</a>.
                 </p>
             </div>

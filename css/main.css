@@ -286,6 +286,7 @@ body #countryBillionairesSection .text h2 {
   margin: 15px;
 }
 body #countryBillionairesSection .text p {
+  text-align: center;
   font-size: 16px !important;
   margin: 10px;
   line-height: 2;
@@ -309,6 +310,10 @@ body #countryBillionairesSection .chart {
 body #countryBillionairesSection .chart * {
   max-width: 100%;
   max-height: 100%;
+}
+body .bold_red {
+  color: rgb(199, 0, 0);
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

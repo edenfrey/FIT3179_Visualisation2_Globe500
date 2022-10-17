@@ -93,12 +93,14 @@
         "type": "quantitative",
         "legend":{
           "orient": "bottom-left",
+          "direction": "horizontal",
           "labelFontSize":12,
           "titleFontSize":12
         },
         "scale": {
-            "type": "log", 
-            "scheme": "greens"        
+            "type": "quantile", 
+            "scheme": "greens",
+            "domain":[5,10,20,50,75,100,150,200]
           }
       },
       "tooltip": [

@@ -322,6 +322,7 @@ body {
                 }
     
                 p {
+                    text-align: center;
                     font-size: 16px !important;
                     margin: 10px;
                     line-height: 2;
@@ -357,6 +358,10 @@ body {
             }
     }
 
+    .bold_red{
+        color: rgb(199, 0, 0);
+        font-weight: bold;
+    }
 }
 
 

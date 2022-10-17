@@ -1,25 +1,25 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title":{"text":"The Industries Total Net Worth (USD Billions)","fontSize":16,"baseline":"middle","align": "center","dy":475},
+    "title":{"text":"The Industries Total Net Worth (USD Billions)","fontSize":16,"baseline":"middle","align": "center","dy":425},
     "width": 700,
     "height": 600,
     "background":"#dddddd",
     "data": {"url": "https://raw.githubusercontent.com/edenfrey/FIT3179_Visualisation2_Globe500/main/data/Industry_Average_Total.csv"},
     "layer": [{
-        "mark": {"type": "arc", "innerRadius": 300, "stroke": "#1c1c1e","outerRadius":400}
+        "mark": {"type": "arc", "innerRadius": 250, "stroke": "#1c1c1e","outerRadius":350, "tooltip":true}
       },{
-        "mark": {"type": "text", "radius": 450,"fontSize":14},
+        "mark": {"type": "text", "radius": 400,"fontSize":14,"fill":"#1c1c1e"},
         "encoding": {
           "text": {"field": "Industry", "type": "nominal"}
         }
       },{
-        "mark": {"type": "text", "radius": 450,"fontSize":14,"yOffset":15},
+        "mark": {"type": "text", "radius": 400,"fontSize":14,"yOffset":15,"fill":"#1c1c1e"},
         "encoding": {
-          "text": {"field": "Total", "type": "quantitative"}
+          "text": {"field": "Total", "type": "quantitative","aggregate":"average"}
         }
       }],
       "encoding": {
-        "theta": {"field": "Total", "type": "quantitative","stack":true},
+        "theta": {"field": "Total", "type": "quantitative","stack":"normalize"},
         "order": {"field": "Industry"},
         "color": {
             "legend":null,
@@ -38,7 +38,7 @@
             "Commodities",
             "Media & Telecom",
             "Entertainment",
-            "Services"], "scheme":["#e60049", "#0bb4ff", "#50e991", "#e6d800", "#9b19f5", "#ffa300", "#dc0ab4", "#b3d4ff", "#00bfa0"]}
+            "Services"], "scheme":"category20b"}
           },
           "tooltip": [
             {"field": "Industry", "type": "nominal"},
