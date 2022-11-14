@@ -12,4 +12,4 @@ The website homepage can be found <a href="https://edenfrey.github.io/FIT3179_Vi
 
 ## Final Report
 
-UIP
+<a href="https://github.com/edenfrey/FIT3179_Visualisation2_Globe500/blob/main/FIT3179_Data%20Visualisation%202_Report_Amir%20Adrian_Amir%20Hamzah_32281994.pdf" target="_blank">Report</a>.
